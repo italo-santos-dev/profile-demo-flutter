@@ -1,9 +1,11 @@
-<p align="center">
-  <a href="https://github.com/dev-italosantos">
-    <img src="https://github.com/dev-italosantos/Developer-Portfolio-Project/blob/master/img/logo.1.png" alt="logo Readme" width="10%" height="10%">
-  </a>
-</p>
-<h3 align="center">Ítalo Santos</h3>
+<body>
+  <br>
+  <p align="center">
+    <a href="https://github.com/dev-italosantos">
+      <img src="https://github.com/dev-italosantos/Developer-Portfolio-Project/blob/master/img/logo.1.png" alt="logo Readme" width="10%" height="10%">
+    </a>
+  </p>
+  <h3 align="center">Ítalo Santos</h3>
  <p align="center">
     <a href="https://dev-italosantos.github.io/Developer-Portfolio-Project/"><strong>Software Developer.</strong></a>
     <br>
@@ -20,3 +22,5 @@
 - :computer:  Flutter, C#, SQL Server...
 
 - :coffee:    Entranced by development technologies. 
+
+</body>
