@@ -1,16 +1,22 @@
-# profile
+<p align="center">
+  <a href="https://github.com/dev-italosantos">
+    <img src="https://github.com/dev-italosantos/Developer-Portfolio-Project/blob/master/img/logo.1.png" alt="logo Readme" width="10%" height="10%">
+  </a>
+</p>
+<h3 align="center">Ítalo Santos</h3>
+ <p align="center">
+    <a href="https://dev-italosantos.github.io/Developer-Portfolio-Project/"><strong>Software Developer.</strong></a>
+    <br>
+    <br>
+    <a href="italotayllor@gmail.com">E-mail</a>
+    ·
+    <a href="https://github.com/dev-italosantos/">GitHub</a>
+    ·
+    <a href="https://www.linkedin.com/in/italo-santos-dev/">Linkedin</a>
+ </p>
+ 
+### Hey! Welcome to my profile! How is it going? :wave: :blush:
 
-A new Flutter project.
+- :computer:  Flutter, C#, SQL Server...
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- :coffee:    Entranced by development technologies. 
