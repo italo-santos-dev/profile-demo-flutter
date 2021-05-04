@@ -8,5 +8,5 @@ class AppColors {
   static final Color purple = Color(0xFF240940);
 
   //levelButton
-  static final Color levelButtonObservers = Color(0xFFEBEBFC);
+  static final Color buttonObservers = Color(0xFF592256);
 }
