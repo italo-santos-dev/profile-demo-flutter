@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:profile/home/widget/carousel/carousel_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,7 +13,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CarouselWidget(),
+            Scaffold(),
           ],
         ),
       ),
