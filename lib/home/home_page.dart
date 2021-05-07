@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/home/widget/sections/top_section_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,11 +10,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Scaffold(),
+           TopSectionWidget(),
           ],
         ),
       ),

@@ -6,6 +6,7 @@ class AppColors {
   static final Color violetred = Color(0xFFBF5486);
   static final Color maroon = Color(0xFF592256);
   static final Color purple = Color(0xFF240940);
+  static final Color white = Color(0xFFFFFFFF);
 
   //levelButton
   static final Color buttonObservers = Color(0xFF592256);
