@@ -2,9 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:profile/components/widget/glass_content_compenents_widget.dart';
+import 'package:profile/components/widget/logo_component_widget.dart';
+import 'package:profile/components/widget/person_component_widget.dart';
 import 'package:profile/core/app_colors.dart';
 import 'package:profile/core/app_default.dart';
-import 'package:profile/core/app_images.dart';
 import 'package:profile/core/core.dart';
 
 class TopSectionWidget extends StatelessWidget {
@@ -12,6 +13,7 @@ class TopSectionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
+      alignment: Alignment.center,
       constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -20,13 +22,13 @@ class TopSectionWidget extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.only(top: kDefaultPadding),
         width: 1200.0,
-        child: Column(
+        child: Stack(
           children: [
-            Spacer(),
-            //Image.asset(AppImages.logo),
-            GlassContentCompenentsWidget(size: size),
-            Spacer(
-              flex: 3,
+            LogoComponentWidget(size: size),
+            Positioned(
+              //bottom: 0,
+              //right: 0,
+              child: PersonComponentWidget(),
             ),
           ],
         ),
