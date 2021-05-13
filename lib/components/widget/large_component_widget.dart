@@ -11,7 +11,6 @@ class LargeComponentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-//crossAxisAlignment: CrossAxisAlignment.start,
       height: 700.0,
       child: Stack(
         fit: StackFit.expand,
@@ -19,7 +18,7 @@ class LargeComponentWidget extends StatelessWidget {
           FractionallySizedBox(
             alignment: Alignment.centerRight,
             widthFactor: .6,
-            child: Image.asset(AppImages.logo),
+            child: Image.asset(AppImages.meio),
           ),
           FractionallySizedBox(
             alignment: Alignment.centerLeft,
@@ -33,10 +32,10 @@ class LargeComponentWidget extends StatelessWidget {
                   Text(
                     "Hey! Welcome to my profile!",
                     style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                	height: 1.5,      
-		color: AppColors.white,
+                      fontSize: 18,
+		      fontWeight: FontWeight.bold,
+                      height: 1.5,      
+		      color: AppColors.white,
                     ),
                   ),
                   RichText(
