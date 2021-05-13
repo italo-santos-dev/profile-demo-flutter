@@ -1,9 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:profile/components/widget/glass_content_compenents_widget.dart';
 import 'package:profile/components/widget/logo_component_widget.dart';
-import 'package:profile/components/widget/person_component_widget.dart';
+import 'package:profile/components/widget/large_component_widget.dart';
 import 'package:profile/core/app_colors.dart';
 import 'package:profile/core/app_default.dart';
 import 'package:profile/core/core.dart';
@@ -25,11 +24,9 @@ class TopSectionWidget extends StatelessWidget {
         child: Stack(
           children: [
             LogoComponentWidget(size: size),
-            Positioned(
-              //bottom: 0,
-              //right: 0,
-              child: PersonComponentWidget(),
-            ),
+            
+               LargeComponentWidget(),
+            
           ],
         ),
       ),
