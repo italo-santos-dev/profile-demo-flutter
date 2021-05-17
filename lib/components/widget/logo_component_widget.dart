@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:profile/components/widget/glass_content_compenents_widget.dart';
 
 class LogoComponentWidget extends StatelessWidget {
   const LogoComponentWidget({
@@ -11,7 +10,6 @@ class LogoComponentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-    );
+    return Column();
   }
 }
