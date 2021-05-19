@@ -3,10 +3,13 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile/components/widget/logo_component_widget.dart';
 import 'package:profile/components/widget/large_component_widget.dart';
-import 'package:profile/components/widget/menu_compenent_widget.dart';
+import 'package:profile/components/widget/navbar_component_widget.dart';
+import 'package:profile/components/widget/small_component_widget.dart';
 import 'package:profile/core/app_colors.dart';
 import 'package:profile/core/app_default.dart';
 import 'package:profile/core/core.dart';
+import 'package:profile/home/widget/sections/body_widget.dart';
+import 'package:profile/utils/responsive_layout_ultis.dart';
 
 class TopSectionWidget extends StatelessWidget {
   @override
@@ -24,16 +27,12 @@ class TopSectionWidget extends StatelessWidget {
         width: 1200.0,
         child: Stack(
           children: [
-            LogoComponentWidget(size: size),
-            Positioned(
-              //bottom: 0,
-              //right: 0,
-              child: LargeComponentWidget(),
-            ),
-            Positioned(
-              bottom: 0,
-              child: MenuComponentWidget(),
-            )
+            NavBarComponentWidget(),
+            BodyWidget()
+            //LogoComponentWidget(size: size),
+            // Positioned(
+            //   child: LargeComponentWidget(),
+            // ),
           ],
         ),
       ),

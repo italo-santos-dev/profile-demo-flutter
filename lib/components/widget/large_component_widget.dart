@@ -33,9 +33,9 @@ class LargeComponentWidget extends StatelessWidget {
                     "Hey! Welcome to my profile!",
                     style: TextStyle(
                       fontSize: 18,
-		      fontWeight: FontWeight.bold,
-                      height: 1.5,      
-		      color: AppColors.white,
+                      fontWeight: FontWeight.bold,
+                      height: 1.5,
+                      color: AppColors.white,
                     ),
                   ),
                   RichText(
@@ -51,12 +51,15 @@ class LargeComponentWidget extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 12.0, top: 20.0),
-                    child: Text("LET'S EXPLORE THE WORLD", style: TextStyle(
+                    child: Text(
+                      "LET'S EXPLORE THE WORLD",
+                      style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
                         height: 1.5,
-                      ),),
+                      ),
+                    ),
                   )
                 ],
               ),
