@@ -27,12 +27,7 @@ class TopSectionWidget extends StatelessWidget {
         width: 1200.0,
         child: Stack(
           children: [
-            NavBarComponentWidget(),
             BodyWidget()
-            //LogoComponentWidget(size: size),
-            // Positioned(
-            //   child: LargeComponentWidget(),
-            // ),
           ],
         ),
       ),
