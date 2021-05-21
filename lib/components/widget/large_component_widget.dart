@@ -42,7 +42,7 @@ class LargeComponentWidget extends StatelessWidget {
                     text: TextSpan(
                       text: "Italo \nSantos",
                       style: TextStyle(
-                        fontSize: 100,
+                        fontSize: 90,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
                         height: 1.5,
