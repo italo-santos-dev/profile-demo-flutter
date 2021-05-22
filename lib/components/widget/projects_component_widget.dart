@@ -46,7 +46,7 @@ class ProjecComponentWidget extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
-                        height: height * .01,
+                        height: height * .05,
                       ),
                       Text(
                         _project.description,

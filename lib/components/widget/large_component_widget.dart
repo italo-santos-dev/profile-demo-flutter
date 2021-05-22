@@ -30,7 +30,7 @@ class LargeComponentWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    "Hey! Welcome to my profile!",
+                    "Hey! 👋 Welcome to my profile!",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

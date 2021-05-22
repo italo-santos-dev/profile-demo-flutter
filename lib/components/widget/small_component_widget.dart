@@ -17,7 +17,7 @@ class SmallComponentWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Hey! Welcome to my profile!",
+              "Hey! 👋 Welcome to my profile!",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
