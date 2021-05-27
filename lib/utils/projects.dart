@@ -4,19 +4,19 @@ import 'package:profile/models/project_model.dart';
 final List<Project> projects = [
   Project(
       name: 'DevQuiz',
-      image: AppImages.dev_quiz,
+      image: AppImages.devquiz,
       description:
           'Um quiz que te ajudar a estudar Flutter, com jogo de perguntas que trará um direcionamento para o seus estudos!',
       link: 'https://github.com/dev-italosantos/nlw-dev-quiz-flutter'),
   Project(
       name: 'Omnistack Bethehero',
-      image: AppImages.logo_bethehero,
+      image: AppImages.logobethehero,
       description:
           'Construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.',
       link: 'https://github.com/dev-italosantos/omnistack-bethehero'),
   Project(
       name: 'FlexPlay',
-      image: AppImages.logo_flexplay,
+      image: AppImages.logoflexplay,
       description:
           'A FlexPlay é um serviço de transmissão que oferece uma ampla variedade de séries, filmes e documentários.',
       link: 'https://github.com/dev-italosantos/website-flexplay-project'),
