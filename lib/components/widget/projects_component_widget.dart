@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_images.dart';
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html;
+import 'package:share/share.dart';
 
 import 'package:profile/models/project_model.dart';
+
+// ignore: avoid_web_libraries_in_flutter
+//import 'dart:html' as html;
 
 class ProjecComponentWidget extends StatelessWidget {
   final Project _project;
@@ -17,7 +18,7 @@ class ProjecComponentWidget extends StatelessWidget {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, _bottomPadding),
       child: InkWell(
-        onTap: onProjectClick,
+        onTap: () {},
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
@@ -54,20 +55,23 @@ class ProjecComponentWidget extends StatelessWidget {
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),
-
-			Row(
-			mainAxisAlignment: MainAxisAlignment.end,
-			children:  <Widget> [
-						IconButton(
-                          icon: Icon(Icons.favorite),
-                          onPressed: () {},
-                         ),
-                        IconButton(
-                          icon: Icon(Icons.share),
-                          onPressed: () {},
-                        ),
-			],
-			),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          IconButton(
+                            icon: Icon(Icons.favorite),
+                            onPressed: () {},
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.share),
+                            onPressed: () {
+                              Share.share(
+                                "Please Visit https://github.com/dev-italosantos",
+                              );
+                            },
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -79,8 +83,8 @@ class ProjecComponentWidget extends StatelessWidget {
     );
   }
 
-  void onProjectClick() {
-    // ignore: unnecessary_null_comparison
-    if (_project.link != null) html.window.open(_project.link, 'adityadroid');
-  }
+  // void onProjectClick() {
+  //   // ignore: unnecessary_null_comparison
+  //   if (_project.link != null) html.window.open(_project.link, 'adityadroid');
+  // }
 }
