@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/core/app_images.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
@@ -18,7 +19,7 @@ class ProjecComponentWidget extends StatelessWidget {
       child: InkWell(
         onTap: onProjectClick,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -46,13 +47,27 @@ class ProjecComponentWidget extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
-                        height: height * .05,
+                        height: height * .04,
                       ),
                       Text(
                         _project.description,
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),
+
+			Row(
+			mainAxisAlignment: MainAxisAlignment.end,
+			children:  <Widget> [
+						IconButton(
+                          icon: Icon(Icons.favorite),
+                          onPressed: () {},
+                         ),
+                        IconButton(
+                          icon: Icon(Icons.share),
+                          onPressed: () {},
+                        ),
+			],
+			),
                     ],
                   ),
                 ),
