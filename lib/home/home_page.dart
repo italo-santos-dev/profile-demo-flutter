@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.mobile_screen_share),
+            icon: Icon(Icons.construction),
             title: Text('Projects'),
           ),
           BottomNavigationBarItem(
