@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
-import 'package:english_words/english_words.dart';
 
 import 'package:profile/models/project_model.dart';
-
-// ignore: avoid_web_libraries_in_flutter
-//import 'dart:html' as html;
 
 class ProjecComponentWidget extends StatefulWidget {
   final Project _project;
@@ -17,7 +13,7 @@ class ProjecComponentWidget extends StatefulWidget {
 }
 
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
-  final _saved = Set<WordPair>();
+  bool _isPressed = false;
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -25,7 +21,6 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
-        onTap: () {},
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
@@ -66,21 +61,31 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          // IconButton(
-                          //   icon: Icon(Icons.favorite),
-                          //   onPressed: () {},
-                          // ),
-                          // IconButton(
-                          //   icon: Icon(Icons.share),
-                          //   onPressed: () {
-                          //     Share.share(
-                          //       "Please Visit https://github.com/dev-italosantos",
-                          //     );
-                          //   },
-                          // ),
-                          Expanded(
-                            flex: 3,
-                            child: _buildRow(_saved),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: <Widget>[
+                              GestureDetector(
+                                onTap: () {
+                                  setState(() => _isPressed = !_isPressed);
+                                },
+                                child: Icon(
+                                  Icons.favorite_sharp,
+                                  color:
+                                      _isPressed ? Colors.red : Colors.black12,
+                                ),
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  Icons.share,
+                                  color: Colors.black12,
+                                ),
+                                onPressed: () {
+                                  Share.share(
+                                    "Please Visit https://github.com/dev-italosantos",
+                                  );
+                                },
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -92,38 +97,6 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildRow(pair) {
-    final alreadySaved = _saved.contains(pair);
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: <Widget>[
-        IconButton(
-          icon: Icon(
-            alreadySaved ? Icons.favorite : Icons.favorite_border,
-            color: alreadySaved ? Colors.red : null,
-          ),
-          onPressed: () {
-            setState(() {
-              if (alreadySaved) {
-                _saved.remove(pair);
-              } else {
-                _saved.add(pair);
-              }
-            });
-          },
-        ),
-        IconButton(
-          icon: Icon(Icons.share),
-          onPressed: () {
-            Share.share(
-              "Please Visit https://github.com/dev-italosantos",
-            );
-          },
-        ),
-      ],
     );
   }
 }
