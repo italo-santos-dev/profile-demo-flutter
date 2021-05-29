@@ -12,7 +12,7 @@ class TopSectionWidget extends StatelessWidget {
       constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
       width: double.infinity,
       decoration: BoxDecoration(
-        color: AppColors.lightcoral,
+        color: AppColors.purple,
       ),
       child: Container(
         margin: EdgeInsets.only(top: kDefaultPadding),
