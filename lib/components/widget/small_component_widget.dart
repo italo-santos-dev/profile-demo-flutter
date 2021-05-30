@@ -39,9 +39,9 @@ class SmallComponentWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12.0, top: 20.0),
               child: Text(
-                "LET'S EXPLORE THE WORLD",
+                "Let's explore the world",
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: AppColors.white,
                   height: 1.5,
