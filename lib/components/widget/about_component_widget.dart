@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:profile/core/app_colors.dart';
+import 'package:profile/core/app_default.dart';
 import 'package:profile/core/app_fonts.dart';
 import 'package:profile/core/app_images.dart';
 import 'package:profile/core/app_string.dart';
 import 'package:profile/core/app_text_style.dart';
 import 'package:profile/models/education.dart';
+import 'package:profile/utils/education_ultis.dart';
 import 'package:profile/utils/responsive_layout_ultis.dart';
+import 'package:profile/utils/skills_ultis.dart';
 
 class AboutComponentWidget extends StatelessWidget {
   @override
@@ -15,13 +18,18 @@ class AboutComponentWidget extends StatelessWidget {
       constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
       width: double.infinity,
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: AppColors.purple,
       ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: LayoutBuilder(builder: (context, constraints) {
-          return _buildBody(context, constraints);
-        }),
+      child: Container(
+        margin: EdgeInsets.only(top: kDefaultPadding),
+        width: 1200.0,
+        child: Stack(
+          children: [
+            LayoutBuilder(builder: (context, constraints) {
+              return _buildBody(context, constraints);
+            }),
+          ],
+        ),
       ),
     );
   }
@@ -181,18 +189,6 @@ Widget _buildSkillsAndEducation(BuildContext context) {
   );
 }
 
-// Skills Methods:------------------------------------------------------------
-final skills = [
-  'Dart',
-  'Flutter',
-  'C#',
-  'JavaScript',
-  'NodeJS',
-  'Sql Sever',
-  'MySql',
-  'Git',
-];
-
 Widget _buildSkills(BuildContext context) {
   final List<Widget> widgets = skills
       .map((skill) => Padding(
@@ -229,28 +225,6 @@ Widget _buildSkillChip(BuildContext context, String label) {
     ),
   );
 }
-
-// Education Methods:---------------------------------------------------------
-final educationList = [
-  Education(
-    'Apr 2021',
-    'Present',
-    'Laborum ut esse sit fugiat tempor velit consequat duis.',
-    'Software Engineer',
-  ),
-  Education(
-    'Apr 0000',
-    'Apr 0000',
-    'Laborum ut esse sit fugiat tempor velit consequat duis.',
-    'Software Engineer',
-  ),
-  Education(
-    'July 0000',
-    'March 0000',
-    'Laborum ut esse sit fugiat tempor velit consequat duis.',
-    'Software Engineer',
-  ),
-];
 
 Widget _buildEducation() {
   return Column(
