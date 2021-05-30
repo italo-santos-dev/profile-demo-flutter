@@ -5,4 +5,5 @@ class AppImages {
   static String get logobethehero => "assets/images/profile_logo_bethehero.png";
   static String get logoflexplay => "assets/images/profile_logo_flexplay.png";
   static String get profilei => "assets/images/profile_i.jpg";
+  static String get profileabout => "assets/images/profile_about.png";
 }
