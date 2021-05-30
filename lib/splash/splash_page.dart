@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/core/core.dart';
+import 'package:profile/core/string.dart';
 import 'package:profile/home/home_page.dart';
 
 class SplashPage extends StatelessWidget {
@@ -35,14 +36,14 @@ class SplashPage extends StatelessWidget {
                         backgroundColor: AppColors.white,
                         radius: 50.0,
                         child: Center(
-                          child: Image.asset(AppImages.logo),
+                          child: Image.asset(AppImages.logo, width: 50.0),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 20.0),
                       ),
                       Text(
-                        "Portfolio Italo Santos",
+                        Strings.portfolio,
                         style: TextStyle(
                           color: AppColors.white,
                           fontSize: 18.0,
@@ -58,12 +59,12 @@ class SplashPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    CircularProgressIndicator(),      
-              	SizedBox(
-                 height: 50,
-                 ),
+                    CircularProgressIndicator(),
+                    SizedBox(
+                      height: 50,
+                    ),
                     Text(
-                      "Lorem esse aliqua.",
+                      Strings.rights_reserved,
                       style: TextStyle(
                           color: AppColors.white,
                           fontSize: 17.0,
