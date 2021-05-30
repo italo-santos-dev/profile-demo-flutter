@@ -32,7 +32,7 @@ class LargeComponentWidget extends StatelessWidget {
                   Text(
                     "Hey! 👋 Welcome to my profile!",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 18.0,
                       fontWeight: FontWeight.bold,
                       height: 1.5,
                       color: AppColors.white,
@@ -42,7 +42,7 @@ class LargeComponentWidget extends StatelessWidget {
                     text: TextSpan(
                       text: "Italo \nSantos",
                       style: TextStyle(
-                        fontSize: 90,
+                        fontSize: 90.0,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
                         height: 1.5,
@@ -52,9 +52,9 @@ class LargeComponentWidget extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 12.0, top: 20.0),
                     child: Text(
-                      "LET'S EXPLORE THE WORLD",
+                      "Let's explore the world",
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 18.0,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
                         height: 1.5,
