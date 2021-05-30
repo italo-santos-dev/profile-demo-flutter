@@ -1,20 +1,62 @@
 import 'package:flutter/material.dart';
+import 'package:profile/core/app_colors.dart';
 import 'package:profile/core/app_fonts.dart';
 import 'package:profile/core/app_images.dart';
+import 'package:profile/core/app_string.dart';
 import 'package:profile/core/app_text_style.dart';
-import 'package:profile/core/string.dart';
 import 'package:profile/models/education.dart';
 import 'package:profile/utils/responsive_layout_ultis.dart';
 
 class AboutComponentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: LayoutBuilder(builder: (context, constraints) {
-        return _buildBody(context, constraints);
-      }),
+    return Container(
+      alignment: Alignment.center,
+      constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: AppColors.white,
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: LayoutBuilder(builder: (context, constraints) {
+          return _buildBody(context, constraints);
+        }),
+      ),
     );
   }
+}
+
+Widget _buildContent(BuildContext context) {
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: <Widget>[
+      SizedBox(
+          height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
+      _buildAboutMe(context),
+      SizedBox(height: 4.0),
+      _buildHeadline(context),
+      SizedBox(
+          height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
+      ResponsiveLayoutUltis.isSmallScreen(context)
+          ? Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                _buildEducation(),
+                SizedBox(height: 24.0),
+                _buildSkills(context),
+              ],
+            )
+          : _buildSkillsAndEducation(context)
+    ],
+  );
+}
+
+Widget _buildIllustration() {
+  return Image.asset(AppImages.profileabout);
 }
 
 Widget _buildBody(BuildContext context, BoxConstraints constraints) {
@@ -29,10 +71,6 @@ Widget _buildBody(BuildContext context, BoxConstraints constraints) {
       ),
     ),
   );
-}
-
-Widget _buildIllustration() {
-  return Image.asset(AppImages.meio);
 }
 
 Widget _buildLargeScreen(BuildContext context) {
@@ -108,7 +146,7 @@ Widget _buildAboutMe(BuildContext context) {
         TextSpan(
           text: Strings.me,
           style: TextStyles.heading.copyWith(
-            color: Color(0xFF50AFC0),
+            color: AppColors.purple,
             fontSize: ResponsiveLayoutUltis.isSmallScreen(context) ? 36 : 45.0,
           ),
         ),
@@ -117,29 +155,12 @@ Widget _buildAboutMe(BuildContext context) {
   );
 }
 
-Widget _buildContent(BuildContext context) {
-  return Column(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: <Widget>[
-      SizedBox(
-          height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
-      _buildAboutMe(context),
-      SizedBox(
-          height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
-      ResponsiveLayoutUltis.isSmallScreen(context)
-          ? Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                _buildEducation(),
-                SizedBox(height: 24.0),
-                _buildSkills(context),
-              ],
-            )
-          : _buildSkillsAndEducation(context)
-    ],
+Widget _buildHeadline(BuildContext context) {
+  return Text(
+    ResponsiveLayoutUltis.isSmallScreen(context)
+        ? Strings.headline
+        : Strings.headline.replaceFirst(RegExp(r' f'), '\nf'),
+    style: TextStyles.sub_heading,
   );
 }
 
@@ -162,18 +183,14 @@ Widget _buildSkillsAndEducation(BuildContext context) {
 
 // Skills Methods:------------------------------------------------------------
 final skills = [
-  'Java',
-  'Kotlin',
   'Dart',
   'Flutter',
-  'Android',
-  'iOS',
-  'Xamarin',
-  'Reactive Programming',
-  'Jenkins',
-  'Photoshop',
-  'JFrog Atrtifactory',
-  'Code Magic',
+  'C#',
+  'JavaScript',
+  'NodeJS',
+  'Sql Sever',
+  'MySql',
+  'Git',
 ];
 
 Widget _buildSkills(BuildContext context) {
