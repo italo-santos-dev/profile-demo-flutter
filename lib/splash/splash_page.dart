@@ -33,11 +33,8 @@ class SplashPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundColor: AppColors.white,
+                        backgroundImage: AssetImage(AppImages.profilei),
                         radius: 50.0,
-                        child: Center(
-                          child: Image.asset(AppImages.profilei, width: 80.0),
-                        ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 20.0),
@@ -46,7 +43,7 @@ class SplashPage extends StatelessWidget {
                         Strings.portfolio,
                         style: TextStyle(
                           color: AppColors.white,
-                          fontSize: 18.0,
+                          fontSize: 17.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -66,9 +63,10 @@ class SplashPage extends StatelessWidget {
                     Text(
                       Strings.rights_reserved,
                       style: TextStyle(
-                          color: AppColors.white,
-                          fontSize: 17.0,
-                          fontWeight: FontWeight.bold,),
+                        color: AppColors.white,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                      ),
                     )
                   ],
                 ),
