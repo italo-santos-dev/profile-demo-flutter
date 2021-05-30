@@ -6,7 +6,7 @@ class Strings {
   static const String portfolio = "Portfolio Italo Santos";
   static const String o = 'o';
   static const String headline =
-      'I\'am Italo Santos, Mobile App Developer from Lorem, Lorem';
+      'I\'am Italo Santos, Software Developer App, Web and Descktop';
   static const String summary =
       'Focused professional having excellent technical and communication skills, and offering 3 years of experience in Computer industry. Proficient at designing and formulating test automation frameworks, writing code in various languages, feature development and implementation. Specialize in thinking outside the box to find unique solutions to difficult engineering problems.';
   static const String experience = 'Experience';
