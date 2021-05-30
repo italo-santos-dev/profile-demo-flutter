@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/core/core.dart';
-import 'package:profile/core/string.dart';
+import 'package:profile/core/app_string.dart';
 import 'package:profile/home/home_page.dart';
 
 class SplashPage extends StatelessWidget {
@@ -36,7 +36,7 @@ class SplashPage extends StatelessWidget {
                         backgroundColor: AppColors.white,
                         radius: 50.0,
                         child: Center(
-                          child: Image.asset(AppImages.logo, width: 50.0),
+                          child: Image.asset(AppImages.profilei, width: 80.0),
                         ),
                       ),
                       Padding(
@@ -68,7 +68,7 @@ class SplashPage extends StatelessWidget {
                       style: TextStyle(
                           color: AppColors.white,
                           fontSize: 17.0,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.bold,),
                     )
                   ],
                 ),
