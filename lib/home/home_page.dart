@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/components/widget/about_component_widget.dart';
 import 'package:profile/home/widget/sections/top_section_widget.dart';
 import 'package:profile/tabs/projects_tab.dart';
 
@@ -12,6 +13,7 @@ class _HomePageState extends State<HomePage> {
   static List<Widget> tabWidgets = <Widget>[
     TopSectionWidget(),
     ProjectsTab(),
+    AboutComponentWidget(),
   ];
 
   @override
