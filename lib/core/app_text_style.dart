@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/core/app_colors.dart';
 
 import 'app_fonts.dart';
 
@@ -7,14 +8,14 @@ class TextStyles {
 
   static TextStyle get heading => TextStyle(
         fontFamily: Fonts.nexa_bold,
-        color: Color(0xFF45405B),
         fontSize: 45.0,
         fontWeight: FontWeight.bold,
         letterSpacing: 1.0,
       );
 
+  // ignore: non_constant_identifier_names
   static TextStyle get sub_heading => TextStyle(
-        color: Color(0xFF45405B),
+        color: AppColors.white,
         fontFamily: Fonts.product,
         fontSize: 17.0, //17.0
         letterSpacing: 1.2,
@@ -22,7 +23,7 @@ class TextStyles {
 
   static TextStyle get company => TextStyle(
         fontFamily: Fonts.product,
-        color: Color(0xFF45405B),
+        color: AppColors.grey,
         height: 1.5,
         fontSize: 15.0, //15.0
         letterSpacing: 1.0,
@@ -30,7 +31,7 @@ class TextStyles {
 
   static TextStyle get body => TextStyle(
         fontFamily: Fonts.product,
-        color: Color(0xFF85819C),
+        color: AppColors.grey,
         height: 1.5,
         fontSize: 12.0, //12.0
         letterSpacing: 1.0,
@@ -38,7 +39,7 @@ class TextStyles {
 
   static TextStyle get body1 => TextStyle(
         fontFamily: Fonts.product,
-        color: Color(0xFF85819C),
+        color: AppColors.grey,
         height: 1.5,
         fontSize: 10.0, //10.0
         letterSpacing: 1.0,
@@ -46,7 +47,7 @@ class TextStyles {
 
   static TextStyle get chip => TextStyle(
         fontFamily: Fonts.product,
-        color: Color(0xFF85819C),
+        color: AppColors.grey,
         height: 1.5,
         fontSize: 12.0, //12.0
         letterSpacing: 1.0,
