@@ -10,38 +10,30 @@ import 'package:profile/utils/skills_ultis.dart';
 class ContentAboutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
-      width: double.infinity,
-      child: Container(
-        margin: EdgeInsets.only(top: kDefaultPadding),
-        width: 1200.0,
-        child: Stack(
-          children: <Widget>[
-            SizedBox(
-                height:
-                    ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
-            AboutmeWidget(),
-            SizedBox(height: 4.0),
-            _buildHeadline(context),
-            SizedBox(
-                height:
-                    ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
-            ResponsiveLayoutUltis.isSmallScreen(context)
-                ? Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      EducationWidget(),
-                      SizedBox(height: 24.0),
-                      _buildSkills(context),
-                    ],
-                  )
-                : _buildSkillsAndEducation(context)
-          ],
-        ),
-      ),
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        SizedBox(
+            height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
+        AboutmeWidget(),
+        SizedBox(height: 4.0),
+        _buildHeadline(context),
+        SizedBox(
+            height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
+        ResponsiveLayoutUltis.isSmallScreen(context)
+            ? Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  EducationWidget(),
+                  SizedBox(height: 24.0),
+                  _buildSkills(context),
+                ],
+              )
+            : _buildSkillsAndEducation(context),
+      ],
     );
   }
 }
