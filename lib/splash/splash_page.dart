@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile/core/core.dart';
 import 'package:profile/core/app_string.dart';
-import 'package:profile/home/home_page.dart';
+import 'package:profile/pages/home/home_page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
