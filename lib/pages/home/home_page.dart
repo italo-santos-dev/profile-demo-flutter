@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile/home/widget/sections/top_section_widget.dart';
-import 'package:profile/pages/about_component_widget.dart';
+import 'package:profile/pages/about/about_component_widget.dart';
+import 'package:profile/pages/home/widget/sections/top_section_widget.dart';
 import 'package:profile/tabs/projects_tab.dart';
 
 class HomePage extends StatefulWidget {
