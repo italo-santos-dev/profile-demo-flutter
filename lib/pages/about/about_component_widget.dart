@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:profile/core/app_colors.dart';
 import 'package:profile/core/app_default.dart';
-import 'package:profile/core/app_fonts.dart';
-import 'package:profile/core/app_string.dart';
-import 'package:profile/core/app_text_style.dart';
-import 'package:profile/models/education.dart';
-import 'package:profile/utils/education_ultis.dart';
 import 'package:profile/utils/responsive_layout_ultis.dart';
-import 'package:profile/utils/skills_ultis.dart';
 
-import 'about/large_about_components_widget.dart';
-import 'about/widget/content_about_widget.dart';
+import 'widget/large_about_components_widget.dart';
+import 'widget/sections/content_about_widget.dart';
 
 class AboutComponentWidget extends StatelessWidget {
   @override
