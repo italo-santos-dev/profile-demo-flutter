@@ -21,18 +21,18 @@ final List<Project> projects = [
           'A FlexPlay é um serviço de transmissão que oferece uma ampla variedade de séries, filmes e documentários.',
       link: 'https://github.com/dev-italosantos/website-flexplay-project'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Consult CPEs',
+      image: AppImages.logoconsultacep,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'REST API da WS.Correios de alta disponibilidade e segura, para consultar o CEP nos Correios grátis. Perfeito para preenchimento automático de formulários.',
       link:
-          'https://github.com/dev-italosantos'),
+          'https://github.com/dev-italosantos/consult-CPEs'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Conversor de Unidades',
+      image: AppImages.logoconversormedida,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: 'https://github.com/dev-italosantos'),
+          'A premissa principal da aplicação é um conversor de unidades, que lhe permite converter entre unidades básicas.',
+      link: 'https://github.com/dev-italosantos/conversor-de-unidades'),
   Project(
       name: 'Lorem ipsum',
       image: AppImages.logo,
