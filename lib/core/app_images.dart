@@ -8,4 +8,5 @@ class AppImages {
   static String get profileabout => "assets/images/profile_about.png";
   static String get logoconsultacep => "assets/images/profile_logo_busca_cep.png";
   static String get logoconversormedida => "assets/images/profile_converso_medida.png";
+  static String get logohopemodel => "assets/images/profile_logo_hope_model.png";
 }
