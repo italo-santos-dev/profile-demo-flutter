@@ -21,25 +21,25 @@ final List<Project> projects = [
           'A FlexPlay é um serviço de transmissão que oferece uma ampla variedade de séries, filmes e documentários.',
       link: 'https://github.com/dev-italosantos/website-flexplay-project'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Consult CPEs',
+      image: AppImages.logoconsultacep,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'REST API da WS.Correios de alta disponibilidade e segura, para consultar o CEP nos Correios grátis.',
       link:
-          'https://github.com/dev-italosantos'),
+          'https://github.com/dev-italosantos/consult-CPEs'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Conversor de Unidades',
+      image: AppImages.logoconversormedida,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: 'https://github.com/dev-italosantos'),
+          'A premissa principal da aplicação é um conversor de unidades, que lhe permite converter entre unidades básicas.',
+      link: 'https://github.com/dev-italosantos/conversor-de-unidades'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Hope Model',
+      image: AppImages.logohopemodel,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia ficando elegante.',
       link:
-          'https://github.com/dev-italosantos'),
+          'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
       name: 'Lorem ipsum',
       image: AppImages.logo,
@@ -65,7 +65,7 @@ final List<Project> projects = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
       link: 'https://github.com/dev-italosantos'),
   Project(
-      name: 'Lorem ipsum Repairs',
+      name: 'Lorem ipsum',
       image: AppImages.logo,
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',

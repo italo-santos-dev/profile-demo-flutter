@@ -5,8 +5,15 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Profile Italo Santos',
       debugShowCheckedModeBanner: false,
+      title: 'Portfólio Dev Italo Santos',
+      theme: ThemeData(
+      	brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+      	brightness: Brightness.dark,
+      ),
+      //themeMode: ThemeMode.dark,
       home: SplashPage(),
     );
   }
