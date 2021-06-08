@@ -11,8 +11,10 @@ class ProjecComponentWidget extends StatefulWidget {
   @override
   _ProjecComponentWidgetState createState() => _ProjecComponentWidgetState();
 }
-
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
+  void onLike() {
+    setState(() => _isPressed = !_isPressed);
+  }
   bool _isPressed = false;
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
+        //onTap: onProjectClick,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
@@ -65,11 +68,11 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
                               GestureDetector(
-                                onTap: () {
-                                  setState(() => _isPressed = !_isPressed);
-                                },
+                                onTap: onLike,
                                 child: Icon(
-                                  Icons.favorite_sharp,
+                                  _isPressed
+                                      ? Icons.favorite
+                                      : Icons.favorite_border,
                                   color:
                                       _isPressed ? Colors.red : Colors.black12,
                                 ),
@@ -92,7 +95,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
