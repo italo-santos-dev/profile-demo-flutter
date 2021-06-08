@@ -37,7 +37,7 @@ final List<Project> projects = [
       name: 'Hope Model',
       image: AppImages.logohopemodel,
       description:
-          'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia.',
+          'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia ficando elegante.',
       link:
           'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
