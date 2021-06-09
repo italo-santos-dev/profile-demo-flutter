@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/pages/about/about_component_widget.dart';
-import 'package:profile/pages/home/widget/sections/top_section_widget.dart';
-import 'package:profile/tabs/projects_tab.dart';
+import 'package:profile_demo/pages/about/about_component_widget.dart';
+import 'package:profile_demo/pages/home/widget/sections/top_section_widget.dart';
+import 'package:profile_demo/tabs/projects_tab.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.mobile_screen_share),
+            icon: Icon(Icons.home),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(

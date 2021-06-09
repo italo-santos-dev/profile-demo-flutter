@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/pages/projects_component_widget.dart';
-import 'package:profile/utils/projects.dart';
-import 'package:profile/utils/responsive_layout_ultis.dart';
+import 'package:profile_demo/pages/projects_component_widget.dart';
+import 'package:profile_demo/utils/projects.dart';
+import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 class ProjectsTab extends StatelessWidget {
   @override

@@ -1,5 +1,5 @@
-import 'package:profile/core/core.dart';
-import 'package:profile/models/project_model.dart';
+import '../core/app_images.dart';
+import '../models/project_model.dart';
 
 final List<Project> projects = [
   Project(
@@ -25,8 +25,7 @@ final List<Project> projects = [
       image: AppImages.logoconsultacep,
       description:
           'REST API da WS.Correios de alta disponibilidade e segura, para consultar o CEP nos Correios grátis.',
-      link:
-          'https://github.com/dev-italosantos/consult-CPEs'),
+      link: 'https://github.com/dev-italosantos/consult-CPEs'),
   Project(
       name: 'Conversor de Unidades',
       image: AppImages.logoconversormedida,
@@ -38,8 +37,7 @@ final List<Project> projects = [
       image: AppImages.logohopemodel,
       description:
           'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia ficando elegante.',
-      link:
-          'https://github.com/dev-italosantos/website-hopemodel-project'),
+      link: 'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
       name: 'Lorem ipsum',
       image: AppImages.logo,
@@ -51,8 +49,7 @@ final List<Project> projects = [
       image: AppImages.logo,
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link:
-          'https://github.com/dev-italosantos'),
+      link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'Lorem ipsum',
       image: AppImages.logo,
@@ -62,7 +59,8 @@ final List<Project> projects = [
   Project(
       name: 'Lorem ipsum',
       image: AppImages.logo,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
       link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'Lorem ipsum',

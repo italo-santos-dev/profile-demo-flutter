@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_images.dart';
-import 'package:profile/pages/about/widget/sections/content_about_widget.dart';
+import 'package:profile_demo/core/app_images.dart';
+import 'package:profile_demo/pages/about/widget/sections/content_about_widget.dart';
 
 class LargeAboutComponentsWidget extends StatelessWidget {
   @override

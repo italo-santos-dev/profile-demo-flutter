@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:profile_demo/models/project_model.dart';
 import 'package:share/share.dart';
-
-import 'package:profile/models/project_model.dart';
 
 class ProjecComponentWidget extends StatefulWidget {
   final Project _project;
@@ -11,10 +10,12 @@ class ProjecComponentWidget extends StatefulWidget {
   @override
   _ProjecComponentWidgetState createState() => _ProjecComponentWidgetState();
 }
+
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
   void onLike() {
     setState(() => _isPressed = !_isPressed);
   }
+
   bool _isPressed = false;
   @override
   Widget build(BuildContext context) {

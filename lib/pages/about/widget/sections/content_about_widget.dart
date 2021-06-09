@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_default.dart';
-import 'package:profile/core/app_string.dart';
-import 'package:profile/core/app_text_style.dart';
-import 'package:profile/pages/about/widget/aboutme_widget.dart';
-import 'package:profile/pages/about/widget/education_widget.dart';
-import 'package:profile/utils/responsive_layout_ultis.dart';
-import 'package:profile/utils/skills_ultis.dart';
+import 'package:profile_demo/core/app_string.dart';
+import 'package:profile_demo/core/app_text_style.dart';
+import 'package:profile_demo/pages/about/widget/education_widget.dart';
+import 'package:profile_demo/utils/responsive_layout_ultis.dart';
+import 'package:profile_demo/utils/skills_ultis.dart';
+
+import '../aboutme_widget.dart';
 
 class ContentAboutWidget extends StatelessWidget {
   @override

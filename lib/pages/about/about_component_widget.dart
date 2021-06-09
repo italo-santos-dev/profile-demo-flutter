@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_colors.dart';
-import 'package:profile/core/app_default.dart';
-import 'package:profile/utils/responsive_layout_ultis.dart';
+import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/core/app_default.dart';
+import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 import 'widget/large_about_components_widget.dart';
 import 'widget/sections/content_about_widget.dart';

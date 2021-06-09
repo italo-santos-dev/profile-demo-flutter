@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_colors.dart';
-import 'package:profile/core/app_default.dart';
-import 'package:profile/core/core.dart';
-import 'package:profile/tabs/home_tab.dart';
+import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/core/app_default.dart';
+import 'package:profile_demo/tabs/home_tab.dart';
 
 class TopSectionWidget extends StatelessWidget {
   @override

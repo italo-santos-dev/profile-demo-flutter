@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:profile/core/app_colors.dart';
-import 'package:profile/core/app_images.dart';
+import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/core/app_images.dart';
 
 class SmallComponentWidget extends StatelessWidget {
   const SmallComponentWidget({

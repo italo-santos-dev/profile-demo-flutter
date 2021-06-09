@@ -1,5 +1,5 @@
 // Education Methods:---------------------------------------------------------
-import 'package:profile/models/education.dart';
+import 'package:profile_demo/models/education.dart';
 
 final educationList = [
   Education(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile/splash/splash_page.dart';
+import 'package:profile_demo/splash/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -8,12 +8,12 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Portfólio Dev Italo Santos',
       theme: ThemeData(
-      	brightness: Brightness.light,
+        brightness: Brightness.light,
       ),
       darkTheme: ThemeData(
-      	brightness: Brightness.dark,
+        brightness: Brightness.dark,
       ),
-      //themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       home: SplashPage(),
     );
   }
