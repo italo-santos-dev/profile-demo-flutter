@@ -24,7 +24,7 @@ class LargeComponentWidget extends StatelessWidget {
             alignment: Alignment.centerLeft,
             widthFactor: .6,
             child: Padding(
-              padding: EdgeInsets.only(left: 48),
+              padding: EdgeInsets.only(left: 48.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
