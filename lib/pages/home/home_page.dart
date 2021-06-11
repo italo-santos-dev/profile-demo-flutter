@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.mobile_screen_share),
-            title: Text('Lorem'),
+            title: Text('About'),
           ),
         ],
         currentIndex: _selectedIndex,
