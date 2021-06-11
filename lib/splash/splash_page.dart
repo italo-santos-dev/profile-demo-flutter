@@ -3,12 +3,13 @@ import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_gradients.dart';
 import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/core/app_string.dart';
+import 'package:profile_demo/core/app_text_style.dart';
 import 'package:profile_demo/pages/home/home_page.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 7)).then(
+    Future.delayed(Duration(seconds: 3)).then(
       (value) => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -45,7 +46,7 @@ class SplashPage extends StatelessWidget {
                         Strings.portfolio,
                         style: TextStyle(
                           color: AppColors.white,
-                          fontSize: 17.0,
+                          fontSize: 13.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -58,15 +59,18 @@ class SplashPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    CircularProgressIndicator(),
+                    CircularProgressIndicator(
+                      backgroundColor: AppColors.white,
+                      color: AppColors.purple,
+                    ),
                     SizedBox(
                       height: 50,
                     ),
                     Text(
                       Strings.rights_reserved,
-                      style: TextStyle(
+                      style: TextStyles.body.copyWith(
                         color: AppColors.white,
-                        fontSize: 15.0,
+                        fontSize: 13.0,
                         fontWeight: FontWeight.bold,
                       ),
                     )
