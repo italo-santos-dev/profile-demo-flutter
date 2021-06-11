@@ -28,7 +28,7 @@ Widget _buildEducationContainerHeading() {
 
 Widget _buildEducationSummary() {
   return Text(
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    'Pleasure, I m a computer technician enchanted by development technologies who is currently studying Flutter, CSharp snd Node JS!',
     style: TextStyles.body,
   );
 }
@@ -56,7 +56,7 @@ Widget _buildEducationTile(Education education) {
           ),
         ),
         Text(
-          '${education.from}-${education.to}',
+          '${education.from} - ${education.to}',
           style: TextStyles.body,
         ),
       ],
