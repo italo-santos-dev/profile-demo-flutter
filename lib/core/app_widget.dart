@@ -7,13 +7,12 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfólio Dev Italo Santos',
-      theme: ThemeData(
-        brightness: Brightness.light,
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
-      themeMode: ThemeMode.light,
+      // theme: ThemeData(
+      //   brightness: Brightness.light,
+      // ),
+      // darkTheme: ThemeData(
+      //   brightness: Brightness.dark,
+      // ),
       home: SplashPage(),
     );
   }
