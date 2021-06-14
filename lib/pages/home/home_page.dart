@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:profile_demo/pages/about/about_component_widget.dart';
 import 'package:profile_demo/pages/home/widget/sections/top_section_widget.dart';
+
 import 'package:profile_demo/tabs/projects_tab.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,15 +33,15 @@ class _HomePageState extends State<HomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.construction),
-            title: Text('Projects'),
+            label: 'Projects',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.mobile_screen_share),
-            title: Text('About'),
+            label: 'About',
           ),
         ],
         currentIndex: _selectedIndex,
