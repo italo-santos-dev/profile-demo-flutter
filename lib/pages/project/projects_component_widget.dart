@@ -17,6 +17,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
   }
 
   bool _isPressed = false;
+
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
