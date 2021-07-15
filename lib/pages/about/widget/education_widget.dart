@@ -28,7 +28,7 @@ Widget _buildEducationContainerHeading() {
 
 Widget _buildEducationSummary() {
   return Text(
-    'Pleasure, I m a computer technician enchanted by development technologies who is currently studying Flutter, CSharp snd Node JS!',
+    Strings.summary,
     style: TextStyles.body,
   );
 }
