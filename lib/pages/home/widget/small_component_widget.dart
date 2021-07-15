@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/core/app_text_style.dart';
 import 'package:profile_demo/core/core.dart';
 
 import 'package:profile_demo/utils/responsive_layout_ultis.dart';
@@ -24,9 +25,9 @@ class SmallComponentWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Hey </> Welcome to my profile!",
+                    "Ei </> Bem-vindo ao meu portfólio!",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 17,
                       fontWeight: FontWeight.bold,
                       height: 1.5,
                       color: AppColors.white,
@@ -46,9 +47,9 @@ class SmallComponentWidget extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 12.0, top: 20.0),
                     child: Text(
-                      "Let's explore the world",
+                      "Vamos explorar o mundo?",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 17,
                         fontWeight: FontWeight.bold,
                         height: 1.5,
                         color: AppColors.white,
