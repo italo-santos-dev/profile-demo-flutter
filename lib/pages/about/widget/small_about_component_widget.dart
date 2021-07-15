@@ -12,12 +12,12 @@ class SmallAboutComponentWidget extends StatelessWidget {
         padding: EdgeInsets.all(48.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+          children: [
             Expanded(flex: 1, child: ContentAboutWidget()),
             Divider(),
             SizedBox(
-                height:
-                    ResponsiveLayoutUltis.isSmallScreen(context) ? 12.0 : 0.0),
+              height: ResponsiveLayoutUltis.isSmallScreen(context) ? 12.0 : 0.0,
+            ),
           ],
         ),
       ),

@@ -22,9 +22,11 @@ class AboutComponentWidget extends StatelessWidget {
         width: 1200.0,
         child: Stack(
           children: [
-            LayoutBuilder(builder: (context, constraints) {
-              return buildBody(context, constraints);
-            }),
+            LayoutBuilder(
+              builder: (context, constraints) {
+                return buildBody(context, constraints);
+              },
+            ),
           ],
         ),
       ),

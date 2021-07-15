@@ -1,7 +1,9 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
-import 'package:profile_demo/core/app_images.dart';
+import 'package:profile_demo/core/core.dart';
+
+import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 class SmallComponentWidget extends StatelessWidget {
   const SmallComponentWidget({
@@ -10,53 +12,68 @@ class SmallComponentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return IntrinsicHeight(
       child: Padding(
         padding: EdgeInsets.all(48.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "Hey! 👋 Welcome to my profile!",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                height: 1.5,
-                color: AppColors.white,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Expanded(
+              flex: 1,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Hey </> Welcome to my profile!",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      height: 1.5,
+                      color: AppColors.white,
+                    ),
+                  ),
+                  RichText(
+                    text: TextSpan(
+                      text: "Italo \nSantos",
+                      style: TextStyle(
+                        fontSize: 100,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.white,
+                        height: 1.5,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0, top: 20.0),
+                    child: Text(
+                      "Let's explore the world",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        height: 1.5,
+                        color: AppColors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-            RichText(
-              text: TextSpan(
-                text: "Italo \nSantos",
-                style: TextStyle(
-                  fontSize: 100,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.white,
-                  height: 1.5,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 12.0, top: 20.0),
-              child: Text(
-                "Let's explore the world",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.white,
-                  height: 1.5,
-                ),
-              ),
-            ),
+            _buildIllustration(),
+            Divider(),
             SizedBox(
-              height: 30,
-            ),
-            Center(
-              child: Image.asset(AppImages.meio),
+              height: ResponsiveLayoutUltis.isSmallScreen(context) ? 12.0 : 0.0,
             ),
           ],
         ),
       ),
     );
   }
+}
+
+Widget _buildIllustration() {
+  return Image.asset(
+    AppImages.meio,
+    width: 400.0,
+    height: 400.0,
+  );
 }
