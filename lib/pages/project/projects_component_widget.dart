@@ -1,4 +1,3 @@
-import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/models/project_model.dart';
 import 'package:share/share.dart';
