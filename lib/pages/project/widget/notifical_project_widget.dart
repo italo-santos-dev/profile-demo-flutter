@@ -9,42 +9,6 @@ class NotificalProjectWidget extends StatefulWidget {
 }
 
 class _NotificalProjectWidgetState extends State<NotificalProjectWidget> {
-  // late AndroidFlutterLocalNotificationsPlugin localNotification;
-
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   var androidInitialize = new AndroidInitializationSettings('ic_launcher');
-  //   var iOSIntialize = new IOSInitializationSettings();
-  //   var initialzationSettings = new InitializationSettings(
-  //       android: androidInitialize, iOS: iOSIntialize);
-
-  //   localNotification = new FlutterLocalNotificationsPlugin()
-  //       as AndroidFlutterLocalNotificationsPlugin;
-  //   localNotification.initialize(initialzationSettings);
-  // }
-
-  // Future _showNotification() async {
-  //   var androidDetails = new AndroidNotificationDetails(
-  //     "channelId",
-  //     "Local Notification",
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod veniam, quis nostrud exercitation.",
-  //     importance: Importance.high,
-  //   );
-  //   var iosDetails = new IOSNotificationDetails();
-  //   var generalNotificationDetails = new NotificationDetails(
-  //     android: androidDetails,
-  //     iOS: iosDetails,
-  //   );
-  //   await localNotification.show(
-  //     0,
-  //     "Notif Title",
-  //     "The body of the Notification",
-  //     generalNotificationDetails,
-  //   );
-  // }
-
   late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
 
   @override
@@ -81,23 +45,6 @@ class _NotificalProjectWidgetState extends State<NotificalProjectWidget> {
       ),
     );
   }
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     appBar: new AppBar(
-  //       title: new Text('Flutter Local Notification'),
-  //     ),
-  //     body: new Center(
-  //       child: new RaisedButton(
-  //         onPressed: showNotification,
-  //         child: new Text(
-  //           'Tap To Get a Notification',
-  //           style: Theme.of(context).textTheme.headline,
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 
   showNotification() async {
     var android = new AndroidNotificationDetails(

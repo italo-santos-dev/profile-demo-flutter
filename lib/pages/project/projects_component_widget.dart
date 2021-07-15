@@ -1,3 +1,4 @@
+import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/models/project_model.dart';
 import 'package:share/share.dart';
@@ -12,10 +13,6 @@ class ProjecComponentWidget extends StatefulWidget {
 }
 
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
-  void onLike() {
-    setState(() => _isPressed = !_isPressed);
-  }
-
   bool _isPressed = false;
 
   @override
@@ -69,14 +66,29 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
-                              GestureDetector(
-                                onTap: onLike,
-                                child: Icon(
-                                  _isPressed
-                                      ? Icons.favorite
-                                      : Icons.favorite_border,
-                                  color:
-                                      _isPressed ? Colors.red : Colors.black12,
+                              Container(
+                                child: Builder(
+                                  builder: (context) => GestureDetector(
+                                    onTap: () {
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(
+                                        const SnackBar(
+                                          content: Text(
+                                            'Sweet schedule, visit me on github.',
+                                          ),
+                                        ),
+                                      );
+                                      setState(() => _isPressed = !_isPressed);
+                                    },
+                                    child: Icon(
+                                      _isPressed
+                                          ? Icons.favorite
+                                          : Icons.favorite_border,
+                                      color: _isPressed
+                                          ? Colors.red
+                                          : Colors.black12,
+                                    ),
+                                  ),
                                 ),
                               ),
                               IconButton(

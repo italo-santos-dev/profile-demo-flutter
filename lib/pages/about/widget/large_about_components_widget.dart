@@ -14,7 +14,10 @@ class LargeAboutComponentsWidget extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
-                Expanded(flex: 1, child: ContentAboutWidget()),
+                Expanded(
+                  flex: 1,
+                  child: ContentAboutWidget(),
+                ),
                 _buildIllustration(),
               ],
             ),
@@ -26,5 +29,9 @@ class LargeAboutComponentsWidget extends StatelessWidget {
 }
 
 Widget _buildIllustration() {
-  return Image.asset(AppImages.profileabout);
+  return Image.asset(
+    AppImages.profileabout,
+    width: 500.0,
+    height: 500.0,
+  );
 }
