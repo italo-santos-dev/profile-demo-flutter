@@ -29,7 +29,10 @@ Widget _buildEducationContainerHeading() {
 Widget _buildEducationSummary() {
   return Text(
     Strings.summary,
-    style: TextStyles.body,
+    textAlign: TextAlign.justify,
+    style: TextStyles.body.copyWith(
+      color: Color(0xFF45405B),
+    ),
   );
 }
 
@@ -51,6 +54,7 @@ Widget _buildEducationTile(Education education) {
         ),
         Text(
           '${education.organization}',
+          textAlign: TextAlign.justify,
           style: TextStyles.body.copyWith(
             color: Color(0xFF45405B),
           ),
