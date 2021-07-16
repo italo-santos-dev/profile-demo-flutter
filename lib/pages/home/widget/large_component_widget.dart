@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_images.dart';
-import 'package:profile_demo/core/app_text_style.dart';
 
 class LargeComponentWidget extends StatelessWidget {
   const LargeComponentWidget({
@@ -31,7 +30,7 @@ class LargeComponentWidget extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 17.0,
                           fontWeight: FontWeight.bold,
-                          height: 1.5,
+                          height: 1.2,
                           color: AppColors.white,
                         ),
                       ),
@@ -42,20 +41,17 @@ class LargeComponentWidget extends StatelessWidget {
                             fontSize: 90.0,
                             fontWeight: FontWeight.bold,
                             color: AppColors.white,
-                            height: 1.5,
+                            height: 1.4,
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0, top: 20.0),
-                        child: Text(
-                          "Vamos explorar o mundo?",
-                          style: TextStyle(
-                            fontSize: 17.0,
-                            fontWeight: FontWeight.bold,
-                            height: 1.5,
-                            color: AppColors.white,
-                          ),
+                      Text(
+                        "Vamos explorar o mundo?",
+                        style: TextStyle(
+                          fontSize: 17.0,
+                          fontWeight: FontWeight.bold,
+                          height: 1.2,
+                          color: AppColors.white,
                         ),
                       ),
                     ],
