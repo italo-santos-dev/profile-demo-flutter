@@ -12,11 +12,11 @@ class ContentAboutWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        SizedBox(
-            height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
+      children: [
+        // SizedBox(
+        //     height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
         AboutmeWidget(),
         SizedBox(height: 4.0),
         _buildHeadline(context),
@@ -26,7 +26,7 @@ class ContentAboutWidget extends StatelessWidget {
             ? Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+                children: [
                   EducationWidget(),
                   SizedBox(height: 24.0),
                   _buildSkills(context),
