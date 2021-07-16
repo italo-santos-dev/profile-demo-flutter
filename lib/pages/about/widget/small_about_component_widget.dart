@@ -9,9 +9,10 @@ class SmallAboutComponentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 38.0),
+        padding: EdgeInsets.symmetric(horizontal: 48.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(flex: 1, child: ContentAboutWidget()),
             Divider(),
