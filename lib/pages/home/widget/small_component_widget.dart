@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/core/app_string.dart';
 
 import 'package:profile_demo/core/core.dart';
 
@@ -19,6 +20,7 @@ class SmallComponentWidget extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               flex: 1,
@@ -26,7 +28,7 @@ class SmallComponentWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Ei </> Bem-vindo ao meu portfólio!",
+                    Strings.bem_vindo,
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,
@@ -36,17 +38,17 @@ class SmallComponentWidget extends StatelessWidget {
                   ),
                   RichText(
                     text: TextSpan(
-                      text: "Italo \nSantos",
+                      text: Strings.home_i,
                       style: TextStyle(
                         fontSize: 100,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
-                        height: 1.4,
+                        height: 1.3,
                       ),
                     ),
                   ),
                   Text(
-                    "Vamos explorar o mundo?",
+                    Strings.home_explore,
                     style: TextStyle(
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold,

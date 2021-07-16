@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_images.dart';
+import 'package:profile_demo/core/app_string.dart';
 
 class LargeComponentWidget extends StatelessWidget {
   const LargeComponentWidget({
@@ -14,19 +15,19 @@ class LargeComponentWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Expanded(
             child: Row(
               mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
+              children: [
                 Expanded(
                   flex: 1,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
+                    children: [
                       Text(
-                        "Ei </> Bem-vindo ao meu portfólio!",
+                        Strings.bem_vindo,
                         style: TextStyle(
                           fontSize: 17.0,
                           fontWeight: FontWeight.bold,
@@ -36,17 +37,17 @@ class LargeComponentWidget extends StatelessWidget {
                       ),
                       RichText(
                         text: TextSpan(
-                          text: "Italo \nSantos",
+                          text: Strings.home_i,
                           style: TextStyle(
                             fontSize: 90.0,
                             fontWeight: FontWeight.bold,
                             color: AppColors.white,
-                            height: 1.4,
+                            height: 1.3,
                           ),
                         ),
                       ),
                       Text(
-                        "Vamos explorar o mundo?",
+                        Strings.home_explore,
                         style: TextStyle(
                           fontSize: 17.0,
                           fontWeight: FontWeight.bold,
