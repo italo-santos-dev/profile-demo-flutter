@@ -49,6 +49,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                     children: <Widget>[
                       Text(
                         widget._project.name,
+                        textAlign: TextAlign.justify,
                         style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
@@ -56,6 +57,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                       ),
                       Text(
                         widget._project.description,
+                        textAlign: TextAlign.justify,
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),

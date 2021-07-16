@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
-import 'package:profile_demo/core/app_text_style.dart';
+
 import 'package:profile_demo/core/core.dart';
 
 import 'package:profile_demo/utils/responsive_layout_ultis.dart';
@@ -15,9 +15,10 @@ class SmallComponentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Padding(
-        padding: EdgeInsets.all(48.0),
+        padding: const EdgeInsets.symmetric(horizontal: 48.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(
               flex: 1,
@@ -27,9 +28,9 @@ class SmallComponentWidget extends StatelessWidget {
                   Text(
                     "Ei </> Bem-vindo ao meu portfólio!",
                     style: TextStyle(
-                      fontSize: 17,
+                      fontSize: 17.0,
                       fontWeight: FontWeight.bold,
-                      height: 1.5,
+                      height: 1.2,
                       color: AppColors.white,
                     ),
                   ),
@@ -40,20 +41,17 @@ class SmallComponentWidget extends StatelessWidget {
                         fontSize: 100,
                         fontWeight: FontWeight.bold,
                         color: AppColors.white,
-                        height: 1.5,
+                        height: 1.4,
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 12.0, top: 20.0),
-                    child: Text(
-                      "Vamos explorar o mundo?",
-                      style: TextStyle(
-                        fontSize: 17,
-                        fontWeight: FontWeight.bold,
-                        height: 1.5,
-                        color: AppColors.white,
-                      ),
+                  Text(
+                    "Vamos explorar o mundo?",
+                    style: TextStyle(
+                      fontSize: 17.0,
+                      fontWeight: FontWeight.bold,
+                      height: 1.2,
+                      color: AppColors.white,
                     ),
                   ),
                 ],

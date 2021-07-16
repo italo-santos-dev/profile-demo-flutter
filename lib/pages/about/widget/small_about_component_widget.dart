@@ -9,7 +9,7 @@ class SmallAboutComponentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Padding(
-        padding: EdgeInsets.all(48.0),
+        padding: EdgeInsets.symmetric(horizontal: 38.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

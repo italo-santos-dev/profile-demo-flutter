@@ -43,6 +43,7 @@ Widget _buildHeadline(BuildContext context) {
     ResponsiveLayoutUltis.isSmallScreen(context)
         ? Strings.headline
         : Strings.headline.replaceFirst(RegExp(r' f'), '\nf'),
+    textAlign: TextAlign.justify,
     style: TextStyles.sub_heading,
   );
 }

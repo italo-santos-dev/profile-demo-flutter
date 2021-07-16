@@ -39,7 +39,7 @@ final List<Project> projects = [
           'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia ficando elegante.',
       link: 'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
-      name: 'Lorem ipsum',
+      name: 'PlayFlow',
       image: AppImages.logo,
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
