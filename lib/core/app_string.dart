@@ -3,7 +3,7 @@ class Strings {
   static const String me = 'Mim';
   static const String portfolio = "Portfolio Italo Santos";
   static const String headline =
-      'Ítalo Santos, desenvolvedor de aplicativos, Web, Desktop e Mobile';
+      'Ítalo Santos, desenvolvedor de aplicativos, Web, Desktop e Mobile.';
   static const String experience = 'Experiência';
   static const String summary =
       'Técnico em informática encantado por tecnologias de desenvolvimento que atualmente estuda Flutter, CSharp e Node JS!';
