@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_default.dart';
+import 'package:profile_demo/pages/home/widget/medium_component_widget.dart';
 import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 import '../large_component_widget.dart';
@@ -39,7 +40,7 @@ Widget homedBody(BuildContext context, BoxConstraints constraints) {
           minWidth: constraints.maxWidth, minHeight: constraints.maxHeight),
       child: ResponsiveLayoutUltis(
         largeScreen: LargeComponentWidget(),
-        mediumScreen: Container(),
+        mediumScreen: MediumComponentWidget(),
         smallScreen: SmallComponentWidget(),
       ),
     ),
