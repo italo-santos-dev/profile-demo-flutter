@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Container(
         child: tabWidgets.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
