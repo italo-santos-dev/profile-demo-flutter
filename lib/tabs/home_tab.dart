@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:profile_demo/pages/home/widget/large_component_widget.dart';
-import 'package:profile_demo/pages/home/widget/small_component_widget.dart';
+import 'package:profile_demo/pages/home/widget/responsive/large_component_widget.dart';
+import 'package:profile_demo/pages/home/widget/responsive/medium_component_widget.dart';
+import 'package:profile_demo/pages/home/widget/responsive/small_component_widget.dart';
+
 import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 class HomeTab extends StatelessWidget {
@@ -9,7 +11,7 @@ class HomeTab extends StatelessWidget {
     return ResponsiveLayoutUltis(
       largeScreen: LargeComponentWidget(),
       smallScreen: SmallComponentWidget(),
-      mediumScreen: Container(),
+      mediumScreen: MediumComponentWidget(),
     );
   }
 }

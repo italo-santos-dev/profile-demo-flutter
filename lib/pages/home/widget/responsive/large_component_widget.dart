@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/core/app_string.dart';
@@ -69,9 +70,10 @@ class LargeComponentWidget extends StatelessWidget {
 }
 
 Widget _buildIllustration() {
-  return Image.asset(
-    AppImages.meio,
-    width: 500.0,
-    height: 500.0,
+  return SvgPicture.asset(
+    AppImages.profilehomequite,
+    semanticsLabel: 'Middle home profile ',
+    width: 290.0,
+    height: 290.0,
   );
 }

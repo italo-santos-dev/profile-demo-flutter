@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/pages/about/widget/sections/content_about_widget.dart';
 
@@ -29,9 +30,10 @@ class LargeAboutComponentsWidget extends StatelessWidget {
 }
 
 Widget _buildIllustration() {
-  return Image.asset(
-    AppImages.profileabout,
-    width: 500.0,
-    height: 500.0,
+  return SvgPicture.asset(
+    AppImages.profileaboutquite,
+    semanticsLabel: 'Middle about profile',
+    width: 290.0,
+    height: 290.0,
   );
 }

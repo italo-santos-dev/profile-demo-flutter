@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:profile_demo/core/app_string.dart';
 import 'package:profile_demo/core/core.dart';
+import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
 class MediumComponentWidget extends StatelessWidget {
   const MediumComponentWidget({Key? key}) : super(key: key);
@@ -9,7 +11,12 @@ class MediumComponentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 48.0),
+        padding: const EdgeInsets.only(
+          top: 28.0,
+          left: 48.0,
+          right: 48.0,
+          bottom: 28.0,
+        ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.start,
@@ -36,7 +43,7 @@ class MediumComponentWidget extends StatelessWidget {
                           text: TextSpan(
                             text: Strings.home_i,
                             style: TextStyle(
-                              fontSize: 50.0,
+                              fontSize: 40.0,
                               fontWeight: FontWeight.bold,
                               color: AppColors.white,
                               height: 1.3,
@@ -55,9 +62,12 @@ class MediumComponentWidget extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(
-                    flex: 2,
-                    child: _buildIllustration(),
+                  _buildIllustration(),
+                  Divider(),
+                  SizedBox(
+                    height: ResponsiveLayoutUltis.isSmallScreen(context)
+                        ? 12.0
+                        : 0.0,
                   ),
                 ],
               ),
@@ -70,9 +80,10 @@ class MediumComponentWidget extends StatelessWidget {
 }
 
 Widget _buildIllustration() {
-  return Image.asset(
-    AppImages.meio,
-    width: 300.0,
-    height: 300.0,
+  return SvgPicture.asset(
+    AppImages.profilehomequite,
+    semanticsLabel: 'Middle home profile ',
+    width: 200.0,
+    height: 200.0,
   );
 }
