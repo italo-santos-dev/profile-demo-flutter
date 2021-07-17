@@ -12,11 +12,8 @@ class ContentAboutWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
-      // mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // SizedBox(
-        //     height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 0.0),
         AboutmeWidget(),
         SizedBox(height: 4.0),
         _buildHeadline(context),

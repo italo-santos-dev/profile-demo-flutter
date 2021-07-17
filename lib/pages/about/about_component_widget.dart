@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_default.dart';
-import 'package:profile_demo/pages/about/widget/medium_about_component_widget.dart';
-import 'package:profile_demo/pages/about/widget/small_about_component_widget.dart';
+
 import 'package:profile_demo/utils/responsive_layout_ultis.dart';
 
-import 'widget/large_about_components_widget.dart';
+import 'widget/responsive/large_about_components_widget.dart';
+import 'widget/responsive/medium_about_component_widget.dart';
+import 'widget/responsive/small_about_component_widget.dart';
 
 class AboutComponentWidget extends StatelessWidget {
   @override
