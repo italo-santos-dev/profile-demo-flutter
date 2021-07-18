@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:profile_demo/pages/about/about_component_widget.dart';
 import 'package:profile_demo/pages/home/widget/sections/top_section_widget.dart';
-
-import 'package:profile_demo/tabs/projects_tab.dart';
+import 'package:profile_demo/pages/project/widget/sections/project_section_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static List<Widget> tabWidgets = <Widget>[
     TopSectionWidget(),
-    ProjectsTab(),
+    ProjectSectionWidget(),
     AboutComponentWidget(),
   ];
 

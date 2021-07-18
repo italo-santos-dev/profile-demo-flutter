@@ -6,24 +6,27 @@ import 'package:profile_demo/pages/about/widget/sections/content_about_widget.da
 class LargeAboutComponentsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return IntrinsicHeight(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Expanded(
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: ContentAboutWidget(),
-                ),
-                _buildIllustration(),
-              ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 48.0, right: 48.0),
+      child: IntrinsicHeight(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Expanded(
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: ContentAboutWidget(),
+                  ),
+                  _buildIllustration(),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

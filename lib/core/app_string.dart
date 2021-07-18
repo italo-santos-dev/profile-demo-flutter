@@ -11,6 +11,7 @@ class Strings {
   static const String summary =
       'Técnico em informática encantado por tecnologias de desenvolvimento que atualmente estuda Flutter, CSharp e Node JS!';
   static const String skills_i_have = 'Linguagens e ferramentas';
+  static const String contact_i_have = 'Contatos';
   static const String rights_reserved =
       '© 2021 ITALO SANTOS, TODOS OS DIREITOS RESERVADOS.';
 }

@@ -6,7 +6,7 @@ final List<Project> projects = [
       name: 'DevQuiz',
       image: AppImages.devquiz,
       description:
-          'Um quiz que te ajudar a estudar Flutter, com jogo de perguntas que trará um direcionamento para o seus estudos!',
+          'Um quiz que te ajudar a estudar Flutter, com jogo de perguntas que trará um direcionamento para o seus estudos.',
       link: 'https://github.com/dev-italosantos/nlw-dev-quiz-flutter'),
   Project(
       name: 'Omnistack Bethehero',
@@ -14,6 +14,12 @@ final List<Project> projects = [
       description:
           'Construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.',
       link: 'https://github.com/dev-italosantos/omnistack-bethehero'),
+  Project(
+      name: 'PlayFlow',
+      image: AppImages.logo,
+      description:
+          'Este projeto foi desenvolvido na NLW, uma semana intensa de estudos, acompanhada por um projeto sensacional.',
+      link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'FlexPlay',
       image: AppImages.logoflexplay,
@@ -39,28 +45,22 @@ final List<Project> projects = [
           'Aqui você pode compra as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia ficando elegante.',
       link: 'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
-      name: 'PlayFlow',
+      name: 'Course Flutter',
       image: AppImages.logo,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Developing NATIVE and PROFESSIONAL Apps for ANDROID and iOS with ONLY 1 CODE! Flutter: the GOOGLE REVOLUTION.',
       link: 'https://github.com/dev-italosantos'),
   Project(
-      name: 'Lorem ipsum',
+      name: 'Valoriza',
       image: AppImages.logo,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.',
       link: 'https://github.com/dev-italosantos'),
   Project(
-      name: 'Lorem ipsum',
+      name: 'Clean Api Node JS',
       image: AppImages.logo,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-      link: 'https://github.com/dev-italosantos'),
-  Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
-      description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'API with well-defined and decoupled architecture, using TDD as the Clean Architecture working methodology.',
       link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'Lorem ipsum',
