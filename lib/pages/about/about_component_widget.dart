@@ -20,7 +20,6 @@ class AboutComponentWidget extends StatelessWidget {
       ),
       child: Container(
         margin: EdgeInsets.only(top: kDefaultPadding),
-        width: 1200.0,
         child: Stack(
           children: [
             LayoutBuilder(
@@ -39,7 +38,8 @@ Widget buildBody(BuildContext context, BoxConstraints constraints) {
   return SingleChildScrollView(
     child: ConstrainedBox(
       constraints: BoxConstraints(
-          minWidth: constraints.maxWidth, minHeight: constraints.maxHeight),
+        minHeight: constraints.maxHeight,
+      ),
       child: ResponsiveLayoutUltis(
         largeScreen: LargeAboutComponentsWidget(),
         mediumScreen: MediumAboutComponentWidget(),

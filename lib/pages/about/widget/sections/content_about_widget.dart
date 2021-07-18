@@ -63,7 +63,6 @@ Widget _buildSkills(BuildContext context) {
     children: <Widget>[
       _buildSkillsContainerHeading(),
       Wrap(children: widgets),
-//        _buildNavigationArrows(),
     ],
   );
 }
