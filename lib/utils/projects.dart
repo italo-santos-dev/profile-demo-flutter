@@ -15,8 +15,8 @@ final List<Project> projects = [
           'Construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.',
       link: 'https://github.com/dev-italosantos/omnistack-bethehero'),
   Project(
-      name: 'PlayFlow',
-      image: AppImages.logo,
+      name: 'PayFlow',
+      image: AppImages.logopayflow,
       description:
           'Este projeto foi desenvolvido na NLW, uma semana intensa de estudos, acompanhada por um projeto sensacional.',
       link: 'https://github.com/dev-italosantos'),
@@ -46,32 +46,32 @@ final List<Project> projects = [
       link: 'https://github.com/dev-italosantos/website-hopemodel-project'),
   Project(
       name: 'Course Flutter',
-      image: AppImages.logo,
+      image: AppImages.profileflutter,
       description:
           'Developing NATIVE and PROFESSIONAL Apps for ANDROID and iOS with ONLY 1 CODE! Flutter: the GOOGLE REVOLUTION.',
       link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'Valoriza',
-      image: AppImages.logo,
+      image: AppImages.profilenode,
       description:
           'Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.',
       link: 'https://github.com/dev-italosantos'),
   Project(
       name: 'Clean Api Node JS',
-      image: AppImages.logo,
+      image: AppImages.profilenode,
       description:
           'API with well-defined and decoupled architecture, using TDD as the Clean Architecture working methodology.',
       link: 'https://github.com/dev-italosantos'),
   Project(
-      name: 'Lorem ipsum',
-      image: AppImages.logo,
+      name: 'Beyond Infinite',
+      image: AppImages.profilenode,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'NodeJS project based on Programmers Guide course, on YouTube.',
       link: 'https://github.com/dev-italosantos'),
   Project(
-      name: 'Lorem ipsum Repairs',
+      name: 'Aluno online',
       image: AppImages.logo,
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Acesso ao Aluno Online. Informe uma matrícula e senha válida para acessar o sistema.',
       link: 'https://github.com/dev-italosantos'),
 ];

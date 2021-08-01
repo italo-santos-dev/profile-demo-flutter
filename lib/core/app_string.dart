@@ -1,7 +1,7 @@
 class Strings {
   static const String bem_vindo = 'Ei </> Bem-vindo ao meu portfólio!';
   static const String home_i = 'Italo \nSantos';
-  static const String home_explore = 'Vamos explorar o mundo?';
+  static const String home_explore = 'Vamos percorrer o mundo?';
   static const String about = 'Sobre';
   static const String me = 'Mim';
   static const String portfolio = 'Portfolio Italo Santos';
