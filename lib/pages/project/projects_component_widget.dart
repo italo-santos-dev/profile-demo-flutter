@@ -75,7 +75,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                                           .showSnackBar(
                                         const SnackBar(
                                           content: Text(
-                                            'Sweet schedule, visit me on github.',
+                                            'Boa programação, visite-me no github.',
                                           ),
                                         ),
                                       );
