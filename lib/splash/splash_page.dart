@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/core/app_gradients.dart';
 import 'package:profile_demo/core/app_images.dart';
