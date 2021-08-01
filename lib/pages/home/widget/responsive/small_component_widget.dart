@@ -18,8 +18,8 @@ class SmallComponentWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(
           top: 28.0,
-          left: 24.0,
-          right: 24.0,
+          // left: 18.0,
+          // right: 18.0,
           bottom: 28.0,
         ),
         child: Column(
