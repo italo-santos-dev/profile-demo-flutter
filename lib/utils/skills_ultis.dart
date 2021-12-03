@@ -1,11 +1,10 @@
 // Skills Methods:------------------------------------------------------------
 final skills = [
-  'Dart',
   'Flutter',
-  'C#',
+  'Kotlin',
+  'Java',
   'JavaScript',
   'NodeJS',
-  'Sql Sever',
-  'MySql',
+  'Firebase',
   'Git',
 ];
