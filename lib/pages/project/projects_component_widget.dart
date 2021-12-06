@@ -61,52 +61,52 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              Container(
-                                child: Builder(
-                                  builder: (context) => GestureDetector(
-                                    onTap: () {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        const SnackBar(
-                                          content: Text(
-                                            'Boa programação, visite-me no github.',
-                                          ),
-                                        ),
-                                      );
-                                      setState(() => _isPressed = !_isPressed);
-                                    },
-                                    child: Icon(
-                                      _isPressed
-                                          ? Icons.favorite
-                                          : Icons.favorite_border,
-                                      color: _isPressed
-                                          ? Colors.red
-                                          : Colors.black12,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              IconButton(
-                                icon: Icon(
-                                  Icons.share,
-                                  color: Colors.black12,
-                                ),
-                                onPressed: () {
-                                  Share.share(
-                                    "Please Visit https://github.com/dev-italosantos",
-                                  );
-                                },
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.end,
+                      //   children: <Widget>[
+                      //     Row(
+                      //       mainAxisAlignment: MainAxisAlignment.end,
+                      //       children: <Widget>[
+                      //         Container(
+                      //           child: Builder(
+                      //             builder: (context) => GestureDetector(
+                      //               onTap: () {
+                      //                 ScaffoldMessenger.of(context)
+                      //                     .showSnackBar(
+                      //                   const SnackBar(
+                      //                     content: Text(
+                      //                       'Boa programação, visite-me no github.',
+                      //                     ),
+                      //                   ),
+                      //                 );
+                      //                 setState(() => _isPressed = !_isPressed);
+                      //               },
+                      //               child: Icon(
+                      //                 _isPressed
+                      //                     ? Icons.favorite
+                      //                     : Icons.favorite_border,
+                      //                 color: _isPressed
+                      //                     ? Colors.red
+                      //                     : Colors.black12,
+                      //               ),
+                      //             ),
+                      //           ),
+                      //         ),
+                      //         IconButton(
+                      //           icon: Icon(
+                      //             Icons.share,
+                      //             color: Colors.black12,
+                      //           ),
+                      //           onPressed: () {
+                      //             Share.share(
+                      //               "Please Visit https://github.com/dev-italosantos",
+                      //             );
+                      //           },
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ],
+                      // ),
                     ],
                   ),
                 ),
