@@ -1,5 +1,5 @@
 import '../core/app_images.dart';
-import '../models/project_model.dart';
+import '../models/Project.dart';
 
 final List<Project> projects = [
   Project(
