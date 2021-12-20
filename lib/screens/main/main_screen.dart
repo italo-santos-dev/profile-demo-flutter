@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/constants.dart';
-import 'package:profile_demo/pages/about/about_component_widget.dart';
 import 'package:profile_demo/screens/main/components/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
@@ -22,7 +21,9 @@ class MainScreen extends StatelessWidget {
               ),
               Expanded(
                 flex: 7,
-                child:  AboutComponentWidget(),
+                child: Container(
+                  color: Color(0xFFD291BC),
+                ),
               ),
             ],
           ),
