@@ -16,4 +16,6 @@ class AppImages {
       "assets/images/profile_converso_medida.png";
   static String get logohopemodel =>
       "assets/images/profile_logo_hope_model.png";
+  static String get galaxy =>
+      "assets/images/galaxy.jpg";
 }

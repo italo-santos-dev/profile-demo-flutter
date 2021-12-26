@@ -67,10 +67,28 @@ class SideMenu extends StatelessWidget {
                       color: Color(0xFF24242E),
                       child: Row(
                         children: [
+                          Spacer(),
                           IconButton(
                             onPressed: () {},
-                            icon: SvgPicture.asset(AppIcons.checkIcon)
-                          )
+                            icon: SvgPicture.asset(
+                              AppIcons.linkedinIcon,
+                              width: 18.0,
+                              height: 18.0,
+                            )
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: SvgPicture.asset(AppIcons.githubIcon)
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                AppIcons.emailIcon,
+                                width: 20.0,
+                                height: 20.0,
+                              ),
+                          ),
+                          Spacer(),
                         ],
                       ),
                     )

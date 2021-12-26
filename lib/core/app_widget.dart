@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:profile_demo/constants.dart';
+import 'package:profile_demo/screens/home/home_screen.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
 
 class AppWidget extends StatelessWidget {
@@ -8,7 +9,6 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        primaryColor: primaryColor,
         scaffoldBackgroundColor: linda,
         canvasColor: linda,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
@@ -20,7 +20,7 @@ class AppWidget extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Portfólio Dev Italo Santos',
-      home: MainScreen(),
+      home: HomeScreen(),
     );
   }
 }

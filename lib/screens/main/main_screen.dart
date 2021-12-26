@@ -3,7 +3,9 @@ import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/screens/main/components/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({Key? key, required this.children}) : super(key: key);
+
+  final List<Widget> children;
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +16,24 @@ class MainScreen extends StatelessWidget {
             maxWidth: maxWidth,
           ),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 flex: 2,
                 child: SideMenu(),
               ),
+              SizedBox(width: defaultPadding),
               Expanded(
                 flex: 7,
-                child: Container(
-                  color: Color(0xFFD291BC),
-                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      ...children
+                    ],
+                  ),
+                )
               ),
+              SizedBox(width: defaultPadding),
             ],
           ),
         ),
