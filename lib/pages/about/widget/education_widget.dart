@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/app_string.dart';
 import 'package:profile_demo/core/app_text_style.dart';
-import 'package:profile_demo/models/education.dart';
+import 'package:profile_demo/models/Education.dart';
 import 'package:profile_demo/utils/education_ultis.dart';
 
 class EducationWidget extends StatelessWidget {

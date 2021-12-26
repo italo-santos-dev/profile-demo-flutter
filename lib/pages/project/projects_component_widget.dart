@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile_demo/models/project_model.dart';
+import 'package:profile_demo/models/Project.dart';
 import 'package:share/share.dart';
 
 class ProjecComponentWidget extends StatefulWidget {
