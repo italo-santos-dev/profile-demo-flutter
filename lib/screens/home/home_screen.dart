@@ -43,11 +43,11 @@ class MyBuildAnimatedText extends StatelessWidget {
           AnimatedTextKit(
             animatedTexts: [
               TyperAnimatedText(
-                "Atualmente estou aprendendo Java e Flutter",
+                "Atualmente estou esmiuçando Java e Flutter",
                 speed: Duration(milliseconds: 60),
               ),
               TyperAnimatedText(
-                "Continue aprendendo de forma contínua e prática",
+                "Alcançando de forma contínua e prática",
                 speed: Duration(milliseconds: 60),
               ),
               TyperAnimatedText(
