@@ -18,4 +18,5 @@ class AppImages {
       "assets/images/profile_logo_hope_model.png";
   static String get galaxy =>
       "assets/images/galaxy.jpg";
+  static String get universe => "assets/images/universe.jpg";
 }

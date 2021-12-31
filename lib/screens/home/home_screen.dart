@@ -1,10 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_colors.dart';
-import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
 
 import 'components/home_banner.dart';
@@ -17,6 +15,21 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(
       children: [
         HomeBanner(),
+        Row(
+          children: [
+            TweenAnimationBuilder(
+              tween: IntTween(begin: 0, end: 100),
+              duration: defaultDuration,
+              builder: (context, value, child) => Text(
+                "50+",
+                style: Theme.of(context)
+                    .textTheme
+                    .headline6!
+                    .copyWith(color: AppColors.stefany),
+              ),
+            ),
+          ],
+        ),
       ],
     );
   }
@@ -61,5 +74,3 @@ class MyBuildAnimatedText extends StatelessWidget {
     );
   }
 }
-
-

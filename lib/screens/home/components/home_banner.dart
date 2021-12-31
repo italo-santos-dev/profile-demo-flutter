@@ -15,7 +15,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            AppImages.galaxy,
+            AppImages.universe,
             fit: BoxFit.cover,
           ),
           Container(
@@ -46,7 +46,7 @@ class HomeBanner extends StatelessWidget {
                     backgroundColor: AppColors.stefany,
                   ),
                   child: Text(
-                    "EXPLORE NOW",
+                    "APROVEITE AGORA",
                     style: TextStyle(color: darkColor),
                   ),
                 ),
