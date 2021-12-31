@@ -22,7 +22,7 @@ class MainScreen extends StatelessWidget {
                 flex: 2,
                 child: SideMenu(),
               ),
-              SizedBox(width: defaultPadding),
+              // SizedBox(width: defaultPadding),
               Expanded(
                 flex: 7,
                 child: SingleChildScrollView(
@@ -33,7 +33,7 @@ class MainScreen extends StatelessWidget {
                   ),
                 )
               ),
-              SizedBox(width: defaultPadding),
+              // SizedBox(width: defaultPadding),
             ],
           ),
         ),
