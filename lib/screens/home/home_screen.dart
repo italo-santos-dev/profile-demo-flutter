@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_colors.dart';
+import 'package:profile_demo/screens/home/components/highlights.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
 
 import 'components/home_banner.dart';
@@ -15,34 +16,24 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(
       children: [
         HomeBanner(),
-        Row(
-          children: [
-            AnimatedCounter(value: 80, text: "+",)
-          ],
+        HighLightsInfo(),
+        Text(
+          "My Projects",
+          style: Theme.of(context).textTheme.headline6,
+        ),
+        GridView.builder(
+          shrinkWrap: true,
+          itemCount: 9,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            crossAxisSpacing: defaultPadding,
+            mainAxisSpacing: defaultPadding,
+          ),
+          itemBuilder: (context, index) => Container(
+            color: AppColors.stefany,
+          ),
         ),
       ],
-    );
-  }
-}
-
-class AnimatedCounter extends StatelessWidget {
-  const AnimatedCounter({Key? key, required this.value, this.text}) : super(key: key);
-
-  final int value;
-  final String? text;
-
-  @override
-  Widget build(BuildContext context) {
-    return TweenAnimationBuilder(
-      tween: IntTween(begin: 0, end: value),
-      duration: defaultDuration,
-      builder: (context, value, child) => Text(
-        "$value$text",
-        style: Theme.of(context)
-            .textTheme
-            .headline6!
-            .copyWith(color: AppColors.stefany),
-      ),
     );
   }
 }
@@ -57,13 +48,16 @@ class MyBuildAnimatedText extends StatelessWidget {
       child: Row(
         children: [
           Text.rich(
-            TextSpan(text: "<", children: [
-              TextSpan(
-                text: "/",
-                style: TextStyle(color: AppColors.stefany),
-              ),
-              TextSpan(text: "> ")
-            ]),
+            TextSpan(
+              text: "<",
+              children: [
+                TextSpan(
+                  text: "/",
+                  style: TextStyle(color: AppColors.stefany),
+                ),
+                TextSpan(text: "> ")
+              ],
+            ),
           ),
           AnimatedTextKit(
             animatedTexts: [
