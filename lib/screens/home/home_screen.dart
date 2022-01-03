@@ -15,18 +15,81 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(
       children: [
         HomeBanner(),
-        Row(
-          children: [
-            AnimatedCounter(value: 80, text: "+",)
-          ],
-        ),
+        HighLightsInfo(),
+      ],
+    );
+  }
+}
+
+class HighLightsInfo extends StatelessWidget {
+  const HighLightsInfo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          HeighLight(
+            counter: AnimatedCounter(
+              value: 21,
+              text: "+",
+            ),
+            label: "Followers",
+          ),
+          HeighLight(
+            counter: AnimatedCounter(
+              value: 30,
+              text: "+",
+            ),
+            label: "Repositories",
+          ),
+          HeighLight(
+            counter: AnimatedCounter(
+              value: 50,
+              text: "+",
+            ),
+            label: "Stars",
+          ),
+          HeighLight(
+            counter: AnimatedCounter(
+              value: 21,
+              text: "+",
+            ),
+            label: "Following",
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class HeighLight extends StatelessWidget {
+  const HeighLight({Key? key, required this.counter, this.label})
+      : super(key: key);
+
+  final Widget counter;
+  final String? label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        counter,
+        SizedBox(width: defaultPadding / 2),
+        Text(
+          label!,
+          style: Theme.of(context).textTheme.subtitle2,
+        )
       ],
     );
   }
 }
 
 class AnimatedCounter extends StatelessWidget {
-  const AnimatedCounter({Key? key, required this.value, this.text}) : super(key: key);
+  const AnimatedCounter({Key? key, required this.value, this.text})
+      : super(key: key);
 
   final int value;
   final String? text;
@@ -57,13 +120,16 @@ class MyBuildAnimatedText extends StatelessWidget {
       child: Row(
         children: [
           Text.rich(
-            TextSpan(text: "<", children: [
-              TextSpan(
-                text: "/",
-                style: TextStyle(color: AppColors.stefany),
-              ),
-              TextSpan(text: "> ")
-            ]),
+            TextSpan(
+              text: "<",
+              children: [
+                TextSpan(
+                  text: "/",
+                  style: TextStyle(color: AppColors.stefany),
+                ),
+                TextSpan(text: "> ")
+              ],
+            ),
           ),
           AnimatedTextKit(
             animatedTexts: [
