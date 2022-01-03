@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/screens/home/components/highlights.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
@@ -16,12 +17,26 @@ class HomeScreen extends StatelessWidget {
       children: [
         HomeBanner(),
         HighLightsInfo(),
+        Text(
+          "My Projects",
+          style: Theme.of(context).textTheme.headline6,
+        ),
+        GridView.builder(
+          shrinkWrap: true,
+          itemCount: 9,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            crossAxisSpacing: defaultPadding,
+            mainAxisSpacing: defaultPadding,
+          ),
+          itemBuilder: (context, index) => Container(
+            color: AppColors.stefany,
+          ),
+        ),
       ],
     );
   }
 }
-
-
 
 class MyBuildAnimatedText extends StatelessWidget {
   const MyBuildAnimatedText({Key? key}) : super(key: key);
