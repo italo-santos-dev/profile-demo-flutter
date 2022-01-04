@@ -20,7 +20,7 @@ class AppWidget extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Portfólio Dev Italo Santos',
-      home: HomeScreen(),
+      home: SplashPage(),
     );
   }
 }
