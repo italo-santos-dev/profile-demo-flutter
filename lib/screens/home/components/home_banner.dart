@@ -48,6 +48,7 @@ class HomeBanner extends StatelessWidget {
                   child: Text(
                     "APROVEITE AGORA",
                     style: TextStyle(color: darkColor),
+
                   ),
                 ),
               ],
