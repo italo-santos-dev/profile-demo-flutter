@@ -6,6 +6,7 @@ import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/models/project_beta.dart';
 import 'package:profile_demo/pages/project/widget/sections/project_section_widget.dart';
 import 'package:profile_demo/screens/home/components/highlights.dart';
+import 'package:profile_demo/screens/home/components/my_project.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
 
 import 'components/home_banner.dart';
@@ -19,69 +20,12 @@ class HomeScreen extends StatelessWidget {
       children: [
         HomeBanner(),
         HighLightsInfo(),
-        Text(
-          "My Projects",
-          style: Theme.of(context).textTheme.headline6,
-        ),
-        const SizedBox(height: defaultPadding,),
-        GridView.builder(
-          shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
-          itemCount: projectsBeta.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            childAspectRatio: 1.3,
-            crossAxisSpacing: defaultPadding,
-            mainAxisSpacing: defaultPadding,
-          ),
-          itemBuilder: (context, index) => ProjectCard(project: projectsBeta[index],),
-        ),
+        MyProject(),
       ],
     );
   }
 }
 
-class ProjectCard extends StatelessWidget {
-  const ProjectCard({
-    Key? key, required this.project,
-  }) : super(key: key);
-
-  final ProjectBeta project;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Color(0xFF242430),
-      child: Column(
-        children: [
-          Text(
-            project.title!,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.subtitle2,
-          ),
-          const SizedBox(height: defaultPadding,),
-          Text(
-            project.description!,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              height: 1.5,
-            ),
-          ),
-          const SizedBox(height: defaultPadding,),
-          TextButton(
-            onPressed: () {},
-            child: Text(
-              "Read More >>",
-              style: TextStyle(color: AppColors.stefany),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
 
 class MyBuildAnimatedText extends StatelessWidget {
   const MyBuildAnimatedText({Key? key}) : super(key: key);

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/constants.dart';
+import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/models/project_beta.dart';
 
 class ProjectCard extends StatelessWidget {
@@ -12,6 +13,7 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(defaultPadding),
       color: Color(0xFF242430),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

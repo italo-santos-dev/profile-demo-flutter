@@ -32,7 +32,7 @@ class HomeBanner extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline3!.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 40.0,
+                    fontSize: 35.0,
                   ),
                 ),
                 MyBuildAnimatedText(),
