@@ -23,6 +23,7 @@ class HomeScreen extends StatelessWidget {
           "My Projects",
           style: Theme.of(context).textTheme.headline6,
         ),
+        const SizedBox(height: defaultPadding,),
         GridView.builder(
           shrinkWrap: true,
           physics: NeverScrollableScrollPhysics(),
@@ -33,7 +34,7 @@ class HomeScreen extends StatelessWidget {
             crossAxisSpacing: defaultPadding,
             mainAxisSpacing: defaultPadding,
           ),
-          itemBuilder: (context, index) => ProjectCard(),
+          itemBuilder: (context, index) => ProjectCard(project: projectsBeta[index],),
         ),
       ],
     );
@@ -42,29 +43,40 @@ class HomeScreen extends StatelessWidget {
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
-    Key? key,
+    Key? key, required this.project,
   }) : super(key: key);
+
+  final ProjectBeta project;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.stefany,
+      color: Color(0xFF242430),
       child: Column(
         children: [
           Text(
-            projectsBeta[0].title!,
+            project.title!,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: Theme.of(context).textTheme.subtitle2,
           ),
+          const SizedBox(height: defaultPadding,),
           Text(
-            projectsBeta[0].description!,
+            project.description!,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
               height: 1.5,
             ),
-          )
+          ),
+          const SizedBox(height: defaultPadding,),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              "Read More >>",
+              style: TextStyle(color: AppColors.stefany),
+            ),
+          ),
         ],
       ),
     );
