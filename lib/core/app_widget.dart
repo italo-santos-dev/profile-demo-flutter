@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/screens/home/home_screen.dart';
+<<<<<<< HEAD
 import 'package:profile_demo/screens/main/main_screen.dart';
+=======
+>>>>>>> feature/profile_beta
 import 'package:profile_demo/splash/splash_page.dart';
 
 class AppWidget extends StatelessWidget {
