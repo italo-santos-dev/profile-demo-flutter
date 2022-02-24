@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_colors.dart';
 import 'package:profile_demo/models/project_beta.dart';
+import 'package:profile_demo/pages/project/widget/sections/project_section_widget.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -35,7 +36,14 @@ class ProjectCard extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding,),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProjectSectionWidget(),
+                ),
+              );
+            },
             child: Text(
               "Read More >>",
               style: TextStyle(color: AppColors.stefany),
