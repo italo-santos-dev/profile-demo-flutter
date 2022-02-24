@@ -11,7 +11,6 @@ class ProjecComponentWidget extends StatefulWidget {
 }
 
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
-  bool _isPressed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,6 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
-        //onTap: onProjectClick,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
@@ -58,54 +56,12 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
                         widget._project.description,
                         textAlign: TextAlign.justify,
                         textScaleFactor: 1.2,
-                        style: Theme.of(context).textTheme.caption,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          height: 1.5,
+                        ),
                       ),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.end,
-                      //   children: <Widget>[
-                      //     Row(
-                      //       mainAxisAlignment: MainAxisAlignment.end,
-                      //       children: <Widget>[
-                      //         Container(
-                      //           child: Builder(
-                      //             builder: (context) => GestureDetector(
-                      //               onTap: () {
-                      //                 ScaffoldMessenger.of(context)
-                      //                     .showSnackBar(
-                      //                   const SnackBar(
-                      //                     content: Text(
-                      //                       'Boa programação, visite-me no github.',
-                      //                     ),
-                      //                   ),
-                      //                 );
-                      //                 setState(() => _isPressed = !_isPressed);
-                      //               },
-                      //               child: Icon(
-                      //                 _isPressed
-                      //                     ? Icons.favorite
-                      //                     : Icons.favorite_border,
-                      //                 color: _isPressed
-                      //                     ? Colors.red
-                      //                     : Colors.black12,
-                      //               ),
-                      //             ),
-                      //           ),
-                      //         ),
-                      //         IconButton(
-                      //           icon: Icon(
-                      //             Icons.share,
-                      //             color: Colors.black12,
-                      //           ),
-                      //           onPressed: () {
-                      //             Share.share(
-                      //               "Please Visit https://github.com/dev-italosantos",
-                      //             );
-                      //           },
-                      //         ),
-                      //       ],
-                      //     ),
-                      //   ],
-                      // ),
                     ],
                   ),
                 ),

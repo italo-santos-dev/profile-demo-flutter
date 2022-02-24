@@ -28,7 +28,7 @@ class ProjectCard extends StatelessWidget {
           const SizedBox(height: defaultPadding,),
           Text(
             project.description!,
-            maxLines: 2,
+            maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
               height: 1.5,
