@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/core/app_string.dart';
 
@@ -13,6 +14,7 @@ class MyInfo extends StatelessWidget {
     return  AspectRatio(
       aspectRatio: 1.23,
       child: Container(
+        padding: const EdgeInsets.all(defaultPadding),
         color: Color(0xFF242430),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

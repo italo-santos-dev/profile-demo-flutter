@@ -10,27 +10,30 @@ class MyProject extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          "Projetos",
-          style: Theme.of(context).textTheme.headline6,
-        ),
-        const SizedBox(height: defaultPadding,),
-        GridView.builder(
-          shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
-          itemCount: projectsBeta.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            childAspectRatio: 1.3,
-            crossAxisSpacing: defaultPadding,
-            mainAxisSpacing: defaultPadding,
+    return Container(
+      padding: const EdgeInsets.all(defaultPadding),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Projetos",
+            style: Theme.of(context).textTheme.headline6,
           ),
-          itemBuilder: (context, index) => ProjectCard(project: projectsBeta[index],),
-        ),
-      ],
+          const SizedBox(height: defaultPadding,),
+          GridView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: projectsBeta.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              childAspectRatio: 1.3,
+              crossAxisSpacing: defaultPadding,
+              mainAxisSpacing: defaultPadding,
+            ),
+            itemBuilder: (context, index) => ProjectCard(project: projectsBeta[index],),
+          ),
+        ],
+      ),
     );
   }
 }
