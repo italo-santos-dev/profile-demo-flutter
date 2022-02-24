@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/core/core.dart';
+import 'package:profile_demo/pages/about/about_component_widget.dart';
 
 import '../../../constants.dart';
 import '../home_screen.dart';
@@ -32,13 +33,20 @@ class HomeBanner extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline3!.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 35.0,
+                    fontSize: 30.0,
                   ),
                 ),
                 MyBuildAnimatedText(),
                 SizedBox(height: defaultPadding),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AboutComponentWidget(),
+                      ),
+                    );
+                  },
                   style: TextButton.styleFrom(
                     padding: EdgeInsets.symmetric(
                         horizontal: defaultPadding * 2,
@@ -48,7 +56,6 @@ class HomeBanner extends StatelessWidget {
                   child: Text(
                     "APROVEITE AGORA",
                     style: TextStyle(color: darkColor),
-
                   ),
                 ),
               ],

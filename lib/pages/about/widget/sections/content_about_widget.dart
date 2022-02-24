@@ -10,27 +10,31 @@ import '../aboutme_widget.dart';
 class ContentAboutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        AboutmeWidget(),
-        SizedBox(height: 4.0),
-        _buildHeadline(context),
-        SizedBox(
-            height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
-        ResponsiveLayoutUltis.isSmallScreen(context)
-            ? Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  EducationWidget(),
-                  SizedBox(height: 24.0),
-                  _buildSkills(context),
-                ],
-              )
-            : _buildSkillsAndEducation(context),
-      ],
+    return Material(
+      type: MaterialType.transparency,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          AboutmeWidget(),
+          SizedBox(height: 4.0),
+          _buildHeadline(context),
+          SizedBox(
+              height: ResponsiveLayoutUltis.isSmallScreen(context) ? 24.0 : 48.0),
+          ResponsiveLayoutUltis.isSmallScreen(context)
+              ? Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    EducationWidget(),
+                    SizedBox(height: 24.0),
+                    // _buildSkills(context),
+                  ],
+                )
+              : _buildSkillsAndEducation(context),
+          // : Container()
+        ],
+      ),
     );
   }
 }
@@ -94,10 +98,10 @@ Widget _buildSkillsAndEducation(BuildContext context) {
         child: EducationWidget(),
       ),
       SizedBox(width: 40.0),
-      Expanded(
-        flex: 1,
-        child: _buildSkills(context),
-      ),
+      // Expanded(
+      //   flex: 1,
+      //   child: _buildSkills(context),
+      // ),
     ],
   );
 }
