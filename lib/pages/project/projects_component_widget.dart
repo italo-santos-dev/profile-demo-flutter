@@ -13,7 +13,6 @@ class ProjecComponentWidget extends StatefulWidget {
 }
 
 class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
-
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -21,7 +20,9 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
-        onTap: () { launch('https://github.com/dev-italosantos'); },
+        onTap: () {
+          launch('https://github.com/dev-italosantos');
+        },
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
