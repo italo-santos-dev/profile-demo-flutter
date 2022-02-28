@@ -14,7 +14,7 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(defaultPadding),
+      padding: const EdgeInsets.all(10),
       color: Color(0xFF242430),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

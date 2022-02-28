@@ -14,7 +14,6 @@ class MyInfo extends StatelessWidget {
     return  AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        padding: const EdgeInsets.all(defaultPadding),
         color: Color(0xFF242430),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

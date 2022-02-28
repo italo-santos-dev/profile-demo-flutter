@@ -1,6 +1,10 @@
-import 'package:flutter/cupertino.dart';
+import 'dart:io';
+
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:open_file/open_file.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_icons.dart';
 import 'package:profile_demo/screens/main/components/area_info_text.dart';
@@ -42,7 +46,12 @@ class SideMenu extends StatelessWidget {
                     Divider(),
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          openFile(
+                            url: 'https://drive.google.com/file/d/1gY05JoeEtzmDWGdvsnfZKzlDj-D3hOsj/view?usp=sharing',
+                            fileName: 'CurriculoItaloSantos.pdf',
+                          );
+                        },
                         child: FittedBox(
                           child: Row(
                             children: [
@@ -99,5 +108,39 @@ class SideMenu extends StatelessWidget {
         ],
       ),
     );
+  }
+  Future openFile({required String url, required String? fileName}) async {
+    final file = await downloadFile(url, fileName!);
+
+    if (file == null) return;
+
+    print('Path: ${file.path}');
+
+
+    OpenFile.open(file.path);
+
+  }
+
+  Future<File?> downloadFile(String url, String name) async {
+    final appStorage = await getApplicationDocumentsDirectory();
+    final file = File('${appStorage.path}/$name');
+
+   try {
+     final response = await Dio().get(
+         url,
+         options: Options(
+           responseType: ResponseType.bytes,
+           followRedirects: false,
+           receiveTimeout: 0,
+         )
+     );
+
+     final raf = file.openSync(mode: FileMode.write);
+     raf.writeFromSync(response.data);
+     return file;
+
+   } catch (err) {
+     return null;
+   }
   }
 }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:profile_demo/models/Project.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjecComponentWidget extends StatefulWidget {
   final Project _project;
   final double _bottomPadding;
+
   ProjecComponentWidget(this._project, this._bottomPadding, {size});
 
   @override
@@ -19,6 +21,7 @@ class _ProjecComponentWidgetState extends State<ProjecComponentWidget> {
     return Card(
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
+        onTap: () { launch('https://github.com/dev-italosantos'); },
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
