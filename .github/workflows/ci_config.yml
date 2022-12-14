@@ -42,6 +42,6 @@ jobs:
     - name: deploy hosting on firebase
       uses: w9jds/firebase-action@master
       with:
-        args: deploy --only hosting
+        args: deploy --message \"${{ github.event.head_commit.message }}\"
       env:
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
