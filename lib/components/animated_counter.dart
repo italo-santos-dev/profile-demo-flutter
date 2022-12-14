@@ -20,7 +20,7 @@ class AnimatedCounter extends StatelessWidget {
         style: Theme.of(context)
             .textTheme
             .headline6!
-            .copyWith(color: AppColors.stefany),
+            .copyWith(color: AppColors.crowned),
       ),
     );
   }

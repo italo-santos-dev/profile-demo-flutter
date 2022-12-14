@@ -14,7 +14,7 @@ class ProjectSectionWidget extends StatelessWidget {
         leading: IconButton(
             icon: Icon(
               Icons.arrow_back,
-              color: AppColors.stefany,
+              color: AppColors.crowned,
             ),
             onPressed: () {
               Navigator.pushReplacement(
@@ -30,7 +30,7 @@ class ProjectSectionWidget extends StatelessWidget {
         constraints: BoxConstraints(maxHeight: 900.0, minHeight: 700.0),
         width: double.infinity,
         decoration: BoxDecoration(
-          color: AppColors.linda,
+          color: AppColors.beautiful,
         ),
         child: Container(
           margin: EdgeInsets.only(top: kDefaultPadding),

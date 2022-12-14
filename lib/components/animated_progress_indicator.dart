@@ -28,7 +28,7 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
                   children: [
                     CircularProgressIndicator(
                       value: value,
-                      color: AppColors.stefany,
+                      color: AppColors.crowned,
                     ),
                     Center(
                       child: Text(

@@ -17,7 +17,7 @@ class AboutComponentWidget extends StatelessWidget {
         leading: IconButton(
             icon: Icon(
               Icons.arrow_back,
-              color: AppColors.stefany,
+              color: AppColors.crowned,
             ),
             onPressed: () {
               Navigator.pushReplacement(
