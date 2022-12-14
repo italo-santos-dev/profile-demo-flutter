@@ -29,8 +29,8 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Descubra o incrível universo de \nIt4lo S4ntos...",
-                  style: Theme.of(context).textTheme.headline3!.copyWith(
+                  "Descubra o incrível universo deste jovem apaixonado por tecnologias de desenvolvimento de software",
+                  style: Theme.of(context).textTheme.displaySmall!.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     fontSize: 30.0,
@@ -51,7 +51,7 @@ class HomeBanner extends StatelessWidget {
                     padding: EdgeInsets.symmetric(
                         horizontal: defaultPadding * 2,
                         vertical: defaultPadding),
-                    backgroundColor: AppColors.stefany,
+                    backgroundColor: AppColors.crowned,
                   ),
                   child: Text(
                     "APROVEITE AGORA",
