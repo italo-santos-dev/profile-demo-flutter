@@ -8,6 +8,7 @@ class AppImages {
   static String get logopayflow => "assets/images/profile_logo_playflow.png";
   static String get logoflexplay => "assets/images/profile_logo_flexplay.png";
   static String get profilei => "assets/images/profile_i.jpg";
+  static String get profilenewi => "assets/images/profile_new_i.jpeg";
   static String get profileflutter => "assets/images/profile_flutter.png";
   static String get profilenode => "assets/images/profile_node.png";
   static String get logoconsultacep =>
