@@ -29,35 +29,36 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Descubra o incrível universo deste jovem apaixonado por tecnologias de desenvolvimento de software",
+                  "Descubra o incrível universo deste enérgico apaixonado por tecnologias de desenvolvimento de software...",
                   style: Theme.of(context).textTheme.displaySmall!.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 30.0,
+                    fontSize: 20.0,
                   ),
                 ),
-                MyBuildAnimatedText(),
                 SizedBox(height: defaultPadding),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => AboutComponentWidget(),
-                      ),
-                    );
-                  },
-                  style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: defaultPadding * 2,
-                        vertical: defaultPadding),
-                    backgroundColor: AppColors.crowned,
-                  ),
-                  child: Text(
-                    "APROVEITE AGORA",
-                    style: TextStyle(color: darkColor),
-                  ),
-                ),
+                MyBuildAnimatedText(),
+                // SizedBox(height: defaultPadding),
+                // ElevatedButton(
+                //   onPressed: () {
+                //     Navigator.pushReplacement(
+                //       context,
+                //       MaterialPageRoute(
+                //         builder: (context) => AboutComponentWidget(),
+                //       ),
+                //     );
+                //   },
+                //   style: TextButton.styleFrom(
+                //     padding: EdgeInsets.symmetric(
+                //         horizontal: defaultPadding * 2,
+                //         vertical: defaultPadding),
+                //     backgroundColor: AppColors.crowned,
+                //   ),
+                //   child: Text(
+                //     "APROVEITE AGORA",
+                //     style: TextStyle(color: darkColor),
+                //   ),
+                // ),
               ],
             ),
           ),

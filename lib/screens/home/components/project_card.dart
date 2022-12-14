@@ -46,7 +46,7 @@ class ProjectCard extends StatelessWidget {
             },
             child: Text(
               "Read More >>",
-              style: TextStyle(color: AppColors.stefany),
+              style: TextStyle(color: AppColors.crowned),
             ),
           ),
         ],

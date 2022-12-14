@@ -38,7 +38,7 @@ class MyBuildAnimatedText extends StatelessWidget {
               children: [
                 TextSpan(
                   text: "/",
-                  style: TextStyle(color: AppColors.stefany),
+                  style: TextStyle(color: AppColors.crowned),
                 ),
                 TextSpan(text: "> ")
               ],
