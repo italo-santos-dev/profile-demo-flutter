@@ -4,7 +4,6 @@ import 'package:profile_demo/core/app_gradients.dart';
 import 'package:profile_demo/core/app_images.dart';
 import 'package:profile_demo/core/app_string.dart';
 import 'package:profile_demo/core/app_text_style.dart';
-import 'package:profile_demo/pages/home/home_page.dart';
 import 'package:profile_demo/screens/home/home_screen.dart';
 
 class SplashPage extends StatelessWidget {
