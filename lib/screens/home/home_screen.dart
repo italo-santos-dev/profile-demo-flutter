@@ -1,10 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:profile_demo/constants.dart';
 import 'package:profile_demo/core/app_colors.dart';
-import 'package:profile_demo/models/project_beta.dart';
-import 'package:profile_demo/pages/project/widget/sections/project_section_widget.dart';
 import 'package:profile_demo/screens/home/components/highlights.dart';
 import 'package:profile_demo/screens/home/components/my_project.dart';
 import 'package:profile_demo/screens/main/main_screen.dart';
@@ -33,7 +29,7 @@ class MyBuildAnimatedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTextStyle(
-      style: Theme.of(context).textTheme.subtitle1!,
+      style: Theme.of(context).textTheme.titleMedium!,
       child: Row(
         children: [
           Text.rich(
