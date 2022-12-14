@@ -37,7 +37,7 @@ class SplashPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundImage: AssetImage(AppImages.profilei),
+                        backgroundImage: AssetImage(AppImages.profilenewi),
                         radius: 50.0,
                       ),
                       Padding(
